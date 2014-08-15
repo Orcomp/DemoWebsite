@@ -22,7 +22,7 @@
           <nav>
               <ul class="navigation">
                 <li>
-                    <a href="{{ site.baseurl }}/">
+                    <a href="{{ site.url }}/">
                         <span class="label-nav">Home</span>
                     </a>
                 </li>
@@ -30,7 +30,7 @@
                 {% for page in site.pages %}
                   {% if page.title %}
                     <li>
-                        <a href="{{ page.url | prepend: site.baseurl }}">
+                        <a href="{{ page.url | prepend: site.url }}">
                             <span class="label-nav">{{ page.title }}</span>
                         </a>
                     </li>
