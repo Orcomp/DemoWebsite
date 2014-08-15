@@ -7,6 +7,7 @@ permalink: /documentation/
 # Workspace Settings
 
 A workspace allows you to:
+
 - Configure the Gantt chart exactly the way you want it to look.
 - Store all your settings under a convenient name.
 - Switch settings quickly and easily.
@@ -15,6 +16,7 @@ Once a workspace is saved you can easily switch between different workspaces you
 When you select a workspace from the drop down box, all the settings for the workspace will be restored.
 
 To create a new workspace:
+
 - Enter a name in the text box and click on the create button.
 - Make the changes you require on the Gantt chart.
 - Click the save button.
@@ -79,6 +81,7 @@ The Attributes in Tooltips panel allows user to:
 -  Change the format of datarow by double clicking on Format cell and selecting the appropriate format.
 
 The various formats for a number like 12345.678 are:
+
 - Compact: 12346
 - Fixed point(2): 12345.68
 - Fixed point(1): 12345.7
