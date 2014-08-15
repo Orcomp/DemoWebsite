@@ -12,7 +12,7 @@ layout: default
                     <div class="breadcrumb-container">
                         <ol class="breadcrumb">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="{{site.url}}">Home</a>
                             </li>
                             <li class="active">{{ page.title }}</li>
                         </ol>
@@ -35,6 +35,12 @@ layout: default
     <div class="body-wrapper">
         <div class="container">
             <div class="row">
+                <div class="loading-container">
+                    <div class="spinner">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
               {{ content }}
             </div>
         </div>
