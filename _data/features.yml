@@ -1,0 +1,111 @@
+data:
+    - location: left
+      title: Flexible Data Structure
+      img: FlexibleDataStructure2.png
+      info: Operations can have as many fields as you want. Which you can then view in tooltips or on the rectangle labels.
+
+    - location: right
+      title: Data Rows
+      img: DataRows2.png
+      info: Use data rows to see details of resource operations.
+
+    - location: left
+      title: Plot Rows
+      img: PlotRows2.png
+      info: Display information in plots.
+
+    - location: right
+      title: Data Grouping
+      img: DataGrouping2.png
+      info: Any attribute can be displayed in the resource column.
+
+    - location: left
+      title: Highlight Tool
+      img: HighlightTool.png
+      info: Search and highlight operations you are interested in.
+
+    - location: right
+      title: Navigation
+      img: Navigation.png
+      info: Zoom, scroll and pan through large data sets with ease.
+            Many shortcut keys are available to facilitate navigating your data.
+            Click on the Date-Time axis to zoom in or out of a time period.
+
+    - location: left
+      title: Automatic Refresh
+      img: AutomaticRefresh.png
+      info: Use the timer to automatically update the Gantt chart from a live database feed.
+
+    - location: right
+      title: Multi Data Sources
+      img: DifferentDataSources.png
+      info: Read csv or Excel files as well as database tables and views.
+            A Rantt project can read from multiple data sources at the same time.
+            (I.e. some of your information can be in csv files and the rest in database tables)
+
+    - location: left
+      title: Multi Datasets
+      img: MultiDatasets.png
+      info: Easily compare different datasets against each other.
+
+    - location: right
+      title: Shorcuts
+      img: Shortcuts.png
+      info: Many shortcut keys are available to speed up your workflow.
+
+    - location: left
+      title: Independent Plots
+      img: Independent Plots.png
+      info: Import independent plots which are synchronized with the Gantt chart.
+
+    - location: right
+      noVerticalSpace: true
+      title: Fully Configurable
+      img: FullyConfigurable.png
+      info: Nearly everything on the Gantt chart is configurable.<br/>
+                            - Hide/Display Resources<br/>
+                            - Change Resource position<br/>
+                            - Hide/Display Labels<br/>
+                            - Change Label position<br/>
+                            - Hide/Display tool tip attributes<br/>
+                            - Change tool tip attribute position
+    - location: left
+      title: Workspaces
+      img: Workspaces.png
+      info: Save your configuration settings in a workspace and easily switch between them to focus on certain aspects of your data.
+
+    - location: right
+      title: Workspace Switcher
+      img: WorkspaceSwitcher.png
+      info: Quickly switch workspaces from the toolbar.
+
+    - location: left
+      title: Hide Operations by <br/> Attribute Value
+      img: HideOperationsByAttributeValue.png
+      info: Concentrate on the <br/> operations that matter most to you.
+
+    - location: right
+      title: Property Details
+      img: PropertyDetails.png
+      info: Click on an operation to view the details associated with it in the property details control. Easily search for and filter information.
+
+    - location: left
+      title: Open Large DataSets
+      img: OpenLargeDataSets.png
+      info: Load and view 50 000+ operations with ease.
+
+    - location: right
+      title: Mouse Tracker
+      img: MouseTracker.png
+      info: View information associated with the position of your mouse in the bottom left corner of the status bar.
+
+    - location: left
+      title: Import Calendar Information
+      img: ImportCalendarInformation.png
+      info: 
+
+    - location: right
+      title: Import Relationship Information
+      img: ImportRelationshipInformation.png
+      info: 
+
