@@ -2,7 +2,7 @@
 title: Rantt
 email: smsmail@simulationmodelling.com.au
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-url: http://orcomp.github.io/DemoWebsite/
+url: http://orcomp.github.io/DemoWebsite
 include: [_colorpicker.js, _handlebars.js, _jquery.placeholder.js, _scripts.js, _jq.js, _skinchooser.js, _skins.js, _colorpicker.css]
 
 # Build settings
