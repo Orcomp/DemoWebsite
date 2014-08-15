@@ -44,7 +44,7 @@ data:
             (I.e. some of your information can be in csv files and the rest in database tables)
 
     - location: left
-      title: Multi Datasets
+      title: Multi Datasets / Compare Schedules
       img: MultiDatasets.png
       info: Easily compare different datasets against each other.
 
