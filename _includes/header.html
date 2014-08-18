@@ -27,7 +27,7 @@
                 </li>
 
                 {% for page in site.pages %}
-                  {% if page.title %}
+                  {% if page.title and page.root %}
                     <li>
                         <a href="{{ page.url | prepend: site.url }}">
                             <span class="label-nav">{{ page.title }}</span>

@@ -2,6 +2,7 @@
 layout: page-with-navigation
 title: Documentation
 permalink: /documentation/
+root: true
 navigation-bar:
     - Reference: workspace-settings
       Title: Workspace Settings
