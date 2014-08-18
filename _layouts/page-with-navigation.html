@@ -1,0 +1,17 @@
+---
+layout: page-with-header
+---
+
+    <div class="col-md-9">
+        {{ content }}
+    </div>
+
+    <div class="col-md-3 col-sm-3 navbar">
+        <ul class="nav nav-tab nav-stacked list-group affix-top" data-spy="affix" data-offset-top="125">
+        {% assign active = ' active' %}
+            {% for item in page.navigation-bar %}
+                <li class="list-group-item {{active}}"><a href="#{{item.Reference}}">{{item.Title}}</a></li>
+                {% assign active = '' %}
+            {% endfor %}
+        </ul>
+    </div>

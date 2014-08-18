@@ -1,7 +1,22 @@
 ---
-layout: page-with-header
+layout: page-with-navigation
 title: Documentation
 permalink: /documentation/
+navigation-bar:
+    - Reference: workspace-settings
+      Title: Workspace Settings
+    - Reference: resources-management
+      Title: Resources Management
+    - Reference: attribute-management
+      Title: Attribute Management
+    - Reference: attributes-in-labels
+      Title: Attributes in Labels
+    - Reference: attributes-in-tooltips
+      Title: Attributes in Tooltips
+    - Reference: attributes-in-details
+      Title: Attributes in Details
+    - Reference: attributes-in-datarow
+      Title: Attributes in Datarow
 ---
 
 # Workspace Settings
@@ -57,6 +72,7 @@ NOTE: Please note all settings described on this page are optional.
 ![](../images/DocumentationImages/Workspace/WorkspaceAttributeLabelsManagement.png)
 
 ## Attributes in Tooltips
+
 The Attributes in Tooltips panel allows user to:
 
 -  Show / hide tooltips on Gantt Chart, by toggling the check boxes.
@@ -65,14 +81,13 @@ The Attributes in Tooltips panel allows user to:
 
 ![Rant Attributes in Tooltips](../images/DocumentationImages/Workspace/WorkspaceAttributeTooltipsManagement.png)
 
-
 ## Attributes in Details
 
 -  Show or hide details on the Property Details control, by ticking or unticking the check boxes.
 -  Change the position of each detail on the Property Details Control by double clicking on the position cell and changing the value.
 
-
 ![Rant Attributes in Details](../images/DocumentationImages/Workspace/WorkspaceAttributeDetailsManagement.png)
+
 
 ## Attributes in Datarow
 
