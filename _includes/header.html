@@ -32,6 +32,40 @@
                         <a href="{{ page.url | prepend: site.url }}">
                             <span class="label-nav">{{ page.title }}</span>
                         </a>
+                        {% if page.title == 'Documentation' %}
+                        <ul style="z-index: 1;" class="">
+                            <li>
+                                <a href="about-us.html"> Introduction </a>
+                            </li>
+                            <li>
+                                <a href="services.html"> ProjectWizard </a>
+                            </li>
+                            <li>
+                                <a href="team.html"> Toolbar Tools </a>
+                            </li>
+                            <li>
+                                <a href="sidebar-navigation.html"> Toolbar Settings </a>
+                            </li>
+                            <li>
+                                <a href="faq.html"> Workspaces </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"> LegendControl </a>
+                            </li>
+                            <li>
+                                <a href="sign-up.html"> General Features </a>
+                            </li>
+                            <li>
+                                <a href="sign-in.html"> Web Version </a>
+                            </li>
+                            <li>
+                                <a href="404.html"> FAQ </a>
+                            </li>
+                            <li>
+                                <a href="404.html"> Troubleshooting </a>
+                            </li>
+                        </ul>
+                        {% endif %}
                     </li>
                   {% endif %}
                 {% endfor %}
@@ -75,7 +109,6 @@
         </div>
       </nav>
 -->
-
     </div>
   </div>
 
