@@ -35,34 +35,34 @@
                         {% if page.title == 'Documentation' %}
                         <ul style="z-index: 1;" class="">
                             <li>
-                                <a href="about-us.html"> Introduction </a>
+                                <a href="{{ "/documentation/" | prepend: site.url }}"> Introduction </a>
+                            </li>
+                            <li>    
+                                <a href="{{ "/documentation/projectwizard/" | prepend: site.url }}"> ProjectWizard </a>
                             </li>
                             <li>
-                                <a href="services.html"> ProjectWizard </a>
+                                <a href="{{ "/documentation/toolbartools/" | prepend: site.url }}"> Toolbar Tools </a>
                             </li>
                             <li>
-                                <a href="team.html"> Toolbar Tools </a>
+                                <a href="{{ "/documentation/toolbarsettings/" | prepend: site.url }}"> Toolbar Settings </a>
+                            </li>
+                           <li>
+                                <a href="notimplemented"> Workspaces </a>
                             </li>
                             <li>
-                                <a href="sidebar-navigation.html"> Toolbar Settings </a>
+                                <a href="notimplemented"> LegendControl </a>
                             </li>
                             <li>
-                                <a href="faq.html"> Workspaces </a>
+                                <a href="notimplemented"> General Features </a>
                             </li>
                             <li>
-                                <a href="contact.html"> LegendControl </a>
+                                <a href="notimplemented"> Web Version </a>
                             </li>
                             <li>
-                                <a href="sign-up.html"> General Features </a>
+                                <a href="notimplemented"> FAQ </a>
                             </li>
                             <li>
-                                <a href="sign-in.html"> Web Version </a>
-                            </li>
-                            <li>
-                                <a href="404.html"> FAQ </a>
-                            </li>
-                            <li>
-                                <a href="404.html"> Troubleshooting </a>
+                                <a href="notimplemented"> Troubleshooting </a>
                             </li>
                         </ul>
                         {% endif %}
