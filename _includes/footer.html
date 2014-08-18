@@ -36,3 +36,15 @@
 <script src="{{ "/js/jquery.validate.js" | prepend: site.url }}" type="text/javascript"></script>
 <script src="{{ "/js/jQuery.XDomainRequest.js" | prepend: site.url }}" type="text/javascript"></script>
 <script src="{{ "/js/kanzi.js" | prepend: site.url }}" type="text/javascript"></script>
+
+<script type="text/javascript">
+// refresh scrollspy
+$(document).ready(function() {
+    setTimeout(updateScrollSpy, 1000);
+});
+function updateScrollSpy() {
+    $('[data-spy="scroll"]').each(function () {
+      var $spy = $(this).scrollspy('refresh')
+    });
+}
+</script>
