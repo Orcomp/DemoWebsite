@@ -1,7 +1,7 @@
 ---
 layout: page-with-navigation
 title: Documentation
-permalink: /documentation/
+permalink: /documentation/introduction/
 root: true
 navigation-bar:
     - Reference: workspace-settings
@@ -41,15 +41,14 @@ New settings can be added to an existing workspace by clicking on the save butto
 
 NOTE: Please note all settings described on this page are optional.
 
-![](../images/DocumentationImages/Workspace/WorkspaceSettings.png)
-
+![](WorkspaceSettings.png)
 ## Resources Management
 
 - Show or hide a resource from the Gantt chart by ticking or unticking the check boxes.
 - Change the position of a resource in the Gantt chart by double clicking on the position cell and changing the value.
 
 
-![Rant Attributes Settings](../images/DocumentationImages/Workspace/WorkspaceResourceManagement.png)
+![Rant Attributes Settings](WorkspaceResourceManagement.png)
 
 ## Attribute Management
 
@@ -63,14 +62,14 @@ NOTE: Please note all settings described on this page are optional.
 - Assign the attribute to a category. Attributes with the same category will be grouped together in the tooltips. 
 - Add a description to the attributes.
 
-![Rant Attributes Management](../images/DocumentationImages/Workspace/WorkspaceAttributeManagement.png)
+![Rant Attributes Management](WorkspaceAttributeManagement.png)
 
 ## Attributes in Labels
 
 -  Show or hide attributes in Labels, by ticking or unticking the check boxes.
 -  Change the position of each attribute in the labels by double clicking on the position cell and changing the value.
 
-![](../images/DocumentationImages/Workspace/WorkspaceAttributeLabelsManagement.png)
+![](WorkspaceAttributeLabelsManagement.png)
 
 ## Attributes in Tooltips
 
@@ -80,14 +79,14 @@ The Attributes in Tooltips panel allows user to:
 -  Change the position of each tooltip on Gantt Chart by double clicking on the position cell and changing the value.
 
 
-![Rant Attributes in Tooltips](../images/DocumentationImages/Workspace/WorkspaceAttributeTooltipsManagement.png)
+![Rant Attributes in Tooltips](WorkspaceAttributeTooltipsManagement.png)
 
 ## Attributes in Details
 
 -  Show or hide details on the Property Details control, by ticking or unticking the check boxes.
 -  Change the position of each detail on the Property Details Control by double clicking on the position cell and changing the value.
 
-![Rant Attributes in Details](../images/DocumentationImages/Workspace/WorkspaceAttributeDetailsManagement.png)
+![Rant Attributes in Details](WorkspaceAttributeDetailsManagement.png)
 
 
 ## Attributes in Datarow
@@ -107,4 +106,4 @@ The various formats for a number like 12345.678 are:
 NOTE: In order for an attribute to be displayed in the DataRow, it needs to be of a numeric type, otherwise the value displayed will be 0.
 
 
-![Rant Attributes in Datarow](../images/DocumentationImages/Workspace/WorkspaceAttributeDatarowManagement.png) 
+![Rant Attributes in Datarow](WorkspaceAttributeDatarowManagement.png) 

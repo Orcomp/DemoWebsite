@@ -10,3 +10,4 @@ navigation-bar:
 # Project Wizard
 
 A page related to Project Wizard
+{{page.url}}
