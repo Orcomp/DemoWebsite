@@ -21,15 +21,11 @@ If this level of security is sufficient, and you wish to "hide" the web host and
 
 The connection string used in the Rantt project file would typically be like this (change server, SQL instance and database to suit), if using Windows Authentication:
 
-[?](#)
-
-`<`{.xml .plain}`ConnectionString`{.xml .keyword}`>Data Source=SERVERSQLEXPRESS;Initial Catalog=DATABASENAME;Integrated Security=True</`{.xml .plain}`ConnectionString`{.xml .keyword}`>`{.xml .plain}
+    <ConnectionString Data Source=SERVERSQLEXPRESS;Initial Catalog=DATABASENAME;Integrated Security=True</ConnectionString>
 
 or if using SQL authentication, similar to this:
 
-[?](#)
-
-`<`{.xml .plain}`ConnectionString`{.xml .keyword}`>Data Source=SERVERSQLEXPRESS;Initial Catalog=DATABASENAME;User Id=MYSQLUSER;Password=MYSQLPASSWORD</`{.xml .plain}`ConnectionString`{.xml .keyword}`>`{.xml .plain}
+    <ConnectionString>Data Source=SERVERSQLEXPRESS;Initial Catalog=DATABASENAME;User Id=MYSQLUSER;Password=MYSQLPASSWORD</ConnectionString>
 
  
 
@@ -50,13 +46,13 @@ Disadvantages:
 
 To set up this system of security:
 
-​(A) create a new user account; if IIS and SQL are on the same PC/server, then this can be a local account
+1. Create a new user account; if IIS and SQL are on the same PC/server, then this can be a local account
 
-​(B) add the new user to SQL Server Security/Logins, under "Server Roles" check "public, under "User Mapping" check the box beside the SQL database(es) required, and then check "public" in the lower pane, click OK.
+2. Add the new user to SQL Server Security/Logins, under "Server Roles" check "public, under "User Mapping" check the box beside the SQL database(es) required, and then check "public" in the lower pane, click OK.
 
-​(C) create a new Application Pool. In IIS Manager, highlight "Application Pools", click "Add Application Pool", create a name such as "RanttWebHost", choose .Net 40 and Integrated pipeline mode, click OK Right click this newly created App Pool, click Advanced Settings, scroll down to Process Model/Identity, click the   [ . ] button, change from Built-in Account to Custom Account, click Set button, choose the user account you created in (A) above You will need to enter the password and then again to verify, then click OK
+3. Create a new Application Pool. In IIS Manager, highlight "Application Pools", click "Add Application Pool", create a name such as "RanttWebHost", choose .Net 40 and Integrated pipeline mode, click OK Right click this newly created App Pool, click Advanced Settings, scroll down to Process Model/Identity, click the   [ . ] button, change from Built-in Account to Custom Account, click Set button, choose the user account you created in (A) above You will need to enter the password and then again to verify, then click OK
 
-(D)  Change the identify of the IIS web process In IIS Manager, highlight the Rantt Web Host website "SMS", double click "Authentication", right click Anonymous Authentication (normally the only entry enabled), click Edit. Change from "Specific User" (normally IUSR) to  "Application Pool Identity", click OK
+4. Change the identify of the IIS web process In IIS Manager, highlight the Rantt Web Host website "SMS", double click "Authentication", right click Anonymous Authentication (normally the only entry enabled), click Edit. Change from "Specific User" (normally IUSR) to  "Application Pool Identity", click OK
 
 Now any user visiting the Rantt Web Host website will be able to use a Rantt project file to access SQL The username is not exposed outside of the Rantt project file, and the password is not exposed at all to end users.
 
@@ -64,14 +60,8 @@ Now any user visiting the Rantt Web Host website will be able to use a Rantt pro
 
 The connection string used in the Rantt project file would typically be like this (change server, SQL instance and database to suit). The username does not need to be specified, as it relies on Windows Authentication between IIS and SQL:
 
- 
 
- 
-
-[?](#)
-
-`<`{.xml .plain}`ConnectionString`{.xml .keyword}`>Data Source=SERVERSQLEXPRESS;Initial Catalog=DATABASENAME;Integrated Security=True</`{.xml .plain}`ConnectionString`{.xml .keyword}`>`{.xml .plain}
-
+    <ConnectionString>Data Source=SERVERSQLEXPRESS;Initial Catalog=DATABASENAME;Integrated Security=True</ConnectionString>
  
 
 3. Individual security / fine grained control over access
