@@ -1,5 +1,5 @@
 ---
-layout: page-with-navigation
+layout: page-with-header
 title: Default Colours
 permalink: /documentation/defaultcolours/
 navigation-bar:
@@ -7,15 +7,15 @@ navigation-bar:
       Title: Project Wizard
 ---
 
-                    Rantt will automatically assign colors to operations based on the attribute selected in the legend control and their corresponding values.
+    Rantt will automatically assign colors to operations based on the attribute selected in the legend control and their corresponding values.
 
-![](/wiki/download/attachments/21692421/LegendControl.png?version=1&modificationDate=1397454115804&api=v2)
+![](images/LegendControl.png)
 
  
 
 You can manually change the colors by clicking on the disks:
 
-![](/wiki/download/attachments/21692421/ColorPicker.png?version=1&modificationDate=1397454115716&api=v2)
+![](images/ColorPicker.png)
 
  
 
@@ -29,7 +29,7 @@ The Colors.csv file needs 3 columns:
 
 Example.
 
-![](/wiki/download/attachments/21692421/colorsCsvFile.png?version=1&modificationDate=1397454115796&api=v2)
+![](images/colorsCsvFile.png)
 
 When Rantt loads a project it will automatically check for the existence of a **Colors.csv** file. If there is one it will use the colors supplied for the attribute name/values.
 
