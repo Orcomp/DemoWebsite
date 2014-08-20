@@ -26,14 +26,14 @@ Operating System: Window Vista or later, and has been tested on Windows 7, Windo
 .Net framework: Rantt Web Host requires a minimum of .Net version 4.5
 
 Web Server: Rantt Web Host requires Internet Information Server (IIS) webserver option to be installed, setup to use ASP.Net and the .Net 4.0 Application Pool with Integrated Pipeline.
-Note: If IIS cannot use port 80, the default web server port, because the port is already in use, then consider [setting up an alternate port for IIS](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-SettingupanalternateportforIIS).
+Note: If IIS cannot use port 80, the default web server port, because the port is already in use, then consider [Setting up an alternate port for IIS](#setting-up-an-alternate-port-for-iis).
 
 Win 7 - IIS 7.5
 ---------------
+By default Windows 7 does not have ASP.Net installed; this can result in the error "[HTTP Error 500.19 - Internal Server Error](
+#http-error-50019---internal-server-error), The requested page cannot be accessed because the related confirmation data for the page is invalid."
 
-By default Windows 7 does not have ASP.Net installed; this can result in the error " [HTTP Error 500.19 - Internal Server Error](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-HTTPError500.19-InternalServerError), The requested page cannot be accessed because the related confirmation data for the page is invalid."
-
-If ASP.Net is set to .Net version 2.0 instead of ver. 4.0, this will result in " [HTTP Error 500.21 - Internal Server Error](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-HTTPError500.21-InternalServerError), Handler "ExtensionlessUrlHandler-Integrated-4.0" has a bad module "ManagedPipelineHandler" in its module list. "
+If ASP.Net is set to .Net version 2.0 instead of ver. 4.0, this will result in "[HTTP Error 500.21 - Internal Server Error](#http-error-50021---internal-server-error), Handler "ExtensionlessUrlHandler-Integrated-4.0" has a bad module "ManagedPipelineHandler" in its module list."
 
 Win 8 - IIS 7.5
 ---------------
@@ -58,11 +58,11 @@ Browser Error Messages
 
 Here are a list of various browser error messages with details of the respective solutions:
 
--   [HTTP Error 403.14 - Forbidden](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-HTTPError403.14-Forbidden)
--   [HTTP Error 404.0 - Not Found](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-HTTPError404.0-NotFound)
--   [HTTP Error 404.2 -  Not Found](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-HTTPError404.2-NotFound)
--   [HTTP Error 500.19 - Internal Server Error](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-HTTPError500.19-InternalServerError)
--   [HTTP Error 500.21 - Internal Server Error](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-HTTPError500.21-InternalServerError)
+-   [HTTP Error 403.14 - Forbidden](#http-error-40314---forbidden)
+-   [HTTP Error 404.0 - Not Found](#http-error-4040---not-found)
+-   [HTTP Error 404.2 -  Not Found](#http-error-4042---not-found)
+-   [HTTP Error 500.19 - Internal Server Error](#http-error-50019---internal-server-error)
+-   [HTTP Error 500.21 - Internal Server Error](#http-error-50021---internal-server-error)
 
 HTTP Error 403.14 - Forbidden
 -----------------------------
@@ -70,13 +70,14 @@ HTTP Error 403.14 - Forbidden
 This error appears in the web browser as you attempt to access the Rantt Web Host website:
 
 **HTTP Error 403.14 - Forbidden.** 
+
 The Web server is configured to not list the contents of this directory.
 
 <img src="images/403.14_Forbidden.png" alt="Drawing" style="width: 720px;"/> 
 
 The error message would seem to imply you need directory browsing turned on.
 
-Instead the issue is related to either not having added [.Net 4.0 Application Pools](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-ConfiguringIIStoadd.Net4.0ApplicationPools) or, if added, not setting the [Rantt Web Host application to use the .Net 4.0 application pool](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-ChangingtheApplicationPoolusedbyRanttWebHost).
+Instead the issue is related to either not having added [.Net 4.0 Application Pools](#configuring-iis-toaddnet-40-support-and-aspnet-40-application-pools) or, if added, not setting the [Rantt Web Host application to use the .Net 4.0 application pool](#changing-the-application-pool-used-by-rantt-web-host).
 
 HTTP Error 404.0 - Not Found
 ----------------------------
@@ -84,6 +85,7 @@ HTTP Error 404.0 - Not Found
 This error appears in the web browser as you attempt to access the Rantt Web Host website:
 
 **HTTP Error 404.0 - Not Found**
+
 The resource you are looking for has been removed, had it's name changed, or is temporarily unavailable
 
 <img src="images/404.0_error_not_installed.png" alt="Drawing" style="width: 720px;"/> 
@@ -101,12 +103,11 @@ There could be a number of reasons for this, they are all related to your browse
 Fixes: 
 
 1.  Check that Rantt Web Host has been installed on the PC in question; the default installation folder is *C:\SMS Software\RanttWebSetup*  Verify that this directory exists and has folders such as App_Data and bin, etc. within it. If not, install Rantt Web Host application and try again.
-2.  The default URL for a local installation, "local" means one that is on the same PC or server you are using, then the URL should be: [http://localhost/SMS/](http://localhost/SMS/)  
-check that the URL was typed correctly in the browser.
-3. Unless you are browsing locally (on the same PC), you need to use the name of the server or the name under which the web server is registered. Commonly on an intranet, the server name is a simple, single and memorable name, such as "server" or "intranet" or "webhost". If you have installed it on a PC or server, the default name can be configured differently, but may be found by going to Control Panel, System And Security, System. Open Windows Explorer and type:  *Control Panel\System and Security\System* then press Enter. The computer name is shown as "Computer Name". eg., BALDRIC so try [http://baldric/sms/](http://baldric/sms/)  where "baldric" is your machine name.
-For users in a domain, the full computer name below this entry may also be used, it will typically have the company name in it, eg., [http://baldric.acmetools.local](http://baldric.acmetools.local)   where baldric is the computer name and acmetools is the company name.
+2.  The default URL for a local installation, "local" means one that is on the same PC or server you are using, then the URL should be: "http://localhost/SMS/" check that the URL was typed correctly in the browser.
+3. Unless you are browsing locally (on the same PC), you need to use the name of the server or the name under which the web server is registered. Commonly on an intranet, the server name is a simple, single and memorable name, such as "server" or "intranet" or "webhost". If you have installed it on a PC or server, the default name can be configured differently, but may be found by going to Control Panel, System And Security, System. Open Windows Explorer and type:  *Control Panel\System and Security\System* then press Enter. The computer name is shown as "Computer Name". eg., BALDRIC so try "http://baldric/sms" where "baldric" is your machine name.
+For users in a domain, the full computer name below this entry may also be used, it will typically have the company name in it, eg., "http://baldric.acmetools.local" where baldric is the computer name and acmetools is the company name.
 If still in doubt, please ask your IT staff for further assistance.
-4.  If port 80, the default port used for webservers, is already in use then you could set the local IIS webserver you wish to use for Rantt Web Host to use a another different port. Common alternate ports include port 81, 90, 8000 or 8080. For example, if your PC or server was named say "Sinope", and port 81 was used, then the URL might be constructed in this way: [http://sinope:81/SMS/](http://sinope:81/SMS/)
+4.  If port 80, the default port used for webservers, is already in use then you could set the local IIS webserver you wish to use for Rantt Web Host to use a another different port. Common alternate ports include port 81, 90, 8000 or 8080. For example, if your PC or server was named say "Sinope", and port 81 was used, then the URL might be constructed in this way: "http://sinope:81/SMS/"
 5.  Firewall settings. A symptom of firewall issues is that and you cannot browse the web server remotely (from a different PC), but can browse and use the Rantt web application "locally", on the same server or PC on which it was installed.
 Firewall settings can be quite complex, and vary considerably between Windows desktop versions and Windows Server versions. If using port 80, the default web server port, it is most likely the case that the rule was disabled and simply needs to be enabled. If on the other hand, the webserver was set to a different port, then it may be necessary to either add the port 81 to the current port 80 rules, or on some version of windows desktop/windows server, create a completely new rule to cater for port 81 web server requests. This is an example below from Server 2012 where a rule was created to allow web server requests to port 81:
 <img src="images/port%20in%20use%20-%20create%20port%2081%20firewall%20rule.png" alt="Drawing" style="width: 720px;"/> 
@@ -118,14 +119,15 @@ HTTP Error 404.2 -  Not Found
 
 This error appears in the web browser as you attempt to access the Rantt Web Host website:
 
-**HTTP Error 404.2 - Not Found
-**The page you are requesting cannot be served because of the ISAPI and CGI Restriction list settings on the Web server.
+**HTTP Error 404.2 - Not Found**
+
+The page you are requesting cannot be served because of the ISAPI and CGI Restriction list settings on the Web server.
 
 <img src="images/404.2%20-%20Not%20found%20error.png" alt="Drawing" style="width: 720px;"/> 
 
 This error occurs because the Application Pool was set to .Net 4.0 Classic instead of the required .Net 4.0 Integrated Pipeline. 
 
-To correct this issue, click Start, type **inetmgr**then press enter. Note: If you do not have inetmgr installed, follow this procedure to add the [IIS Management Console](#Troubleshooting-IISManagementConsole) feature to Windows)
+To correct this issue, click Start, type **inetmgr**then press enter. Note: If you do not have inetmgr installed, follow this procedure to add the [IIS Management Console](#iis-management-console)
 Once in Internet Information Server Manager open up the left hand section, through Sites, then Default Website, to reach the SMS website. Highlight SMS on the LHS, then click Advanced Settings on the RHS
 
 Once the Advanced Settings window appears, click on the "Application Pool" to bring up the "Select Application Pool" window, then verify that the pool was set incorrectly to "ASP.Net v4.0 Classic", the incorrect settings are below:
@@ -152,8 +154,8 @@ The requested page cannot be accessed because the related confirmation data for 
 
 The root cause of this issue is most commonly not having installed or set up ASP.Net
 
-Please follow the detail in the section [Adding ASP.Net support to IIS Web Server](#Troubleshooting-AddingASP.NetsupporttoIISWebServer) 
-Then follow subsequent sections, as you will likely need to [Check and Update](#Troubleshooting-.NetFramework4.5-HowtoCheckandUpdate) your .Net framework , then [Configure IIS to add ASP.Net 4.0 Support and .Net4.0 Application Pools](#Troubleshooting-ConfiguringIIStoadd.Net4.0ApplicationPools) and finally [change the Application Pool used by Rantt Web Host](#Troubleshooting-ChangingtheApplicationPoolusedbyRanttWebHost) 
+Please follow the detail in the section [Adding ASP.Net support to IIS Web Server](#adding-aspnet-support-to-iis-web-server) 
+Then follow subsequent sections, as you will likely need to [Check and Update](#net-framework-45---how-to-check-and-update) your .Net framework , then [Configure IIS to add ASP.Net 4.0 Support and .Net4.0 Application Pools](#configuring-iis-to-add-net-40-support-and-aspnet-40-application-pools) and finally [change the Application Pool used by Rantt Web Host](#changing-the-application-pool-used-by-rantt-web-host) 
 
 HTTP Error 500.21 - Internal Server Error
 -----------------------------------------
@@ -165,8 +167,8 @@ Handler "ExtensionlessUrlHandler-Integrated-4.0" has a bad module "ManagedPipeli
 
 <img src="images/IIS7_5%2520internal%2520server%2520error%2520500_21.png" alt="Drawing" style="width: 720px;"/> 
 
-The issue here is likely that you have .Net 4.0 and .Net 4.5 installed, but have not yet [Configured IIS to add .Net 4.0 Support or .Net 4.0 Application Pools](#Troubleshooting-ConfiguringIIStoadd.Net4.0ApplicationPools) 
-You will also need to [change the Application Pool used by Rantt Web Host](#Troubleshooting-ChangingtheApplicationPoolusedbyRanttWebHost)  
+The issue here is likely that you have .Net 4.0 and .Net 4.5 installed, but have not yet [Configured IIS to add .Net 4.0 Support or .Net 4.0 Application Pools](#configuring-iis-to-add-net-40-support-and-aspnet-40-application-pools) 
+You will also need to [change the Application Pool used by Rantt Web Host](#changing-the-application-pool-used-by-rantt-web-host)  
 
 Browser Issues
 ======
@@ -184,9 +186,9 @@ if you see a directory listing instead, like this:
 
 <img src="images/directory-browsing.png" style="width: 720px;"/> 
 
-then first follow the procedure below to [disable directory browsing](#Troubleshooting-HowtoDisableDirectoryBrowsing).
+then first follow the procedure below to [disable directory browsing](#how-to-disable-directory-browsing).
 
-Next check that you have [.Net 4.5 installed](#Troubleshooting-.NetFramework4.5-HowtoCheckandUpdate), that [ASP.Net 4.0 was installed](#Troubleshooting-ConfiguringIIStoAdd.Net4.0SupportandASP.Net4.0ApplicationPools) and that [Rantt Web Host is set to use the ASP.Net 4.0 Application Pools](#Troubleshooting-ChangingtheApplicationPoolusedbyRanttWebHost) . 
+Next check that you have [.Net 4.5 installed](#net-framework-45---how-to-check-and-update), that [ASP.Net 4.0 was installed](#configuring-iis-to-add-net-40-support-and-aspnet-40-application-pools) and that [Rantt Web Host is set to use the ASP.Net 4.0 Application Pools](#changing-the-application-pool-used-by-rantt-web-host) . 
 
 Rantt project page is blank
 ---------------------------
@@ -246,7 +248,7 @@ If you had a working Rantt Web Host application, then failed to work after you d
 
 Rantt Web Host application requires ASP.Net 4.0 application pools, however the default Application pool for your IIS web server can still be ASP.Net 2.0
 
-This means subsequent installations revert back to ASP.Net 2.0; to correct this issue follow these steps: [Changing the Application Pool used by Rantt Web Host](#Troubleshooting-ChangingtheApplicationPoolusedbyRanttWebHost)
+This means subsequent installations revert back to ASP.Net 2.0; to correct this issue follow these steps: [Changing the Application Pool used by Rantt Web Host](#changing-the-application-pool-used-by-rantt-web-host)
 
 You might also consider setting the default application pool to ASP.net 4.0, as long as this doesn't affect other web sites hosted on the PC/server.
 
@@ -258,16 +260,16 @@ IIS, or Internet Information Server, is a webserver that is included with most 
 It is able to "serve" "flat" HTML pages as well as more intelligent "ASP.Net" pages - where actual program code is executed on the server before the web page content itself is "served" to the web browser. 
 
 By default IIS web server itself and the IIS maintenance features are usually not enabled. They can however be easily enabled and configured to suit the requirements of Rantt Web Host. 
-Please see [IIS Web Server Installation](#Troubleshooting-IISWebServerInstallation) procedure below for further details. 
+Please see [IIS Web Server Installation](#iis-web-server-installation) procedure below for further details. 
 
 IIS Web Server Installation
 ---------------------------
 
-If you have not already installed .Net 4.5, see the section below [.Net Framework 4.5 - How to Check and Update](#Troubleshooting-.NetFramework4.5-HowtoCheckandUpdate), then using Windows Update ensure that you have the latest patches and updates installed, particularly for the .Net framework.
+If you have not already installed .Net 4.5, see the section below [.Net Framework 4.5 - How to Check and Update](#net-framework-45---how-to-check-and-update), then using Windows Update ensure that you have the latest patches and updates installed, particularly for the .Net framework.
 
 Internet Information Server or IIS may be installed using Control Panel, click Programs, then click "Turn Windows features on and off".
 
-In all versions of Windows, ensure that you have enabled web services features as noted here: [No data displayed when viewing a Rantt project - only a page frame](#Troubleshooting-NodatadisplayedwhenviewingaRanttproject%2Conlyapageframe)
+In all versions of Windows, ensure that you have enabled web services features as noted here: [No data displayed when viewing a Rantt project - only a page frame](#no-data-displayed)
 Note: The features listed in "Turn Windows features on and off" will vary a little between different versions of Windows. Though the screenshots below show Windows 7, these are similar other editions of windows.
 
 <img src="images/windows_7_features.png"/> 
@@ -312,7 +314,7 @@ There are two places to disable Directory Browsing:
 
 1. To disable for the Rantt web Host only:
 
-Click Start, type **inetmgr**then press Enter. Note: If you do not have inetmgr installed, follow this procedure to add the [IIS Management Console](#Troubleshooting-IISManagementConsole) feature to Windows)
+Click Start, type **inetmgr**then press Enter. Note: If you do not have inetmgr installed, follow this procedure to add the [IIS Management Console](#iis-management-console)
 
 Once in the Internet Information Services Manager open the section to the left to view the SMS website
 
@@ -342,9 +344,9 @@ Directory browsing for Rantt Web Host and all other websites on IIS are now dis
 
 Note: A directory of files such as the directory browsing feature provides can be occasionally be useful for debugging, but should be disabled for normal day-to-day use to avoid confusion to other users.
 
-It is also possible that the "problem" of directory browsing is just a symptom of other issues; often ASP.Net 4.0 has not been installed or configured correctly as well. See [HTTP Error 403.14 - Forbidden](#Troubleshooting-HTTPError403.14-Forbidden) for further details.
+It is also possible that the "problem" of directory browsing is just a symptom of other issues; often ASP.Net 4.0 has not been installed or configured correctly as well. See [HTTP Error 403.14 - Forbidden](#http-error-40314---forbidden) for further details.
 
-Adding ASP.Net support to IIS Web Server
+Adding ASP.Net support to IIS Web Server
 ----------------------------------------
 
 To add ASP.Net support to an existing IIS Web Server, go to Control Panel, Programs, Windows Features
@@ -357,12 +359,12 @@ notice above, the ASP.Net checkbox is unchecked. Click the checkbox to mark it o
 
 There will be a short installation (usually less than a minute), after which the Windows Feature dialogue disappears.
 
-Note: It would be best to check if you have [.Net Framework 4.5 installed](#Troubleshooting-.NetFramework4.5-HowtoCheckandUpdate) and then you should definitely [configure IIS to add .Net 4.0 Support and .Net 4.0 Application Pools](#Troubleshooting-ConfiguringIIStoadd.Net4.0ApplicationPools)  
-You will also need to [change the Application Pool used by Rantt Web Host](#Troubleshooting-ChangingtheApplicationPoolusedbyRanttWebHost)  
+Note: It would be best to check if you have [.Net Framework 4.5 installed](#net-framework-45---how-to-check-and-update) and then you should definitely [configure IIS to add .Net 4.0 Support and .Net 4.0 Application Pools](#configuring-iis-to-add-net-40-support-and-aspnet-40-application-pools)  
+You will also need to [change the Application Pool used by Rantt Web Host](#changing-the-application-pool-used-by-rantt-web-host)  
 
 Finally, assuming there are no other issues, you should now be able to browse the website.
 
-.Net Framework 4.5 - How to Check and Update
+.Net Framework 4.5 - How to Check and Update
 --------------------------------------------
 
 Download the utility program *DotNetVersionChecker.exe* from here: [http://sdrv.ms/140I5yL](http://sdrv.ms/140I5yL) 
@@ -381,20 +383,20 @@ To correct these issues, and install .Net 4.0 and .Net 4.5, go to the Microsoft 
 
 [http://www.microsoft.com/en-au/download/details.aspx?id=30653](http://www.microsoft.com/en-au/download/details.aspx?id=30653)
 
-Download, run the installer, then once .Net 4.5 is installed, follow the steps from: [Configuring IIS to add .Net 4.0 Application Pools](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-ConfiguringIIStousean.Net4.0ApplicationPool)
-Note: You will also need to [change the Application Pool used by Rantt Web Host](#Troubleshooting-ChangingtheApplicationPoolusedbyRanttWebHost)  
+Download, run the installer, then once .Net 4.5 is installed, follow the steps from: [Configuring IIS to add .Net 4.0 Application Pools](#configuring-iis-to-add-net-40-support-and-aspnet-40-application-pools)
+Note: You will also need to [change the Application Pool used by Rantt Web Host](#changing-the-application-pool-used-by-rantt-web-host)  
 
 Configuring IIS
 ---------------
 
-###Configuring IIS to Add .Net 4.0 Support and ASP.Net 4.0 Application Pools
+###Configuring IIS to Add .Net 4.0 Support and ASP.Net 4.0 Application Pools
 
 If you have only just set up ASP.Net on IIS, it will default to .Net 2.0 only. Even if you have installed .Net 4.0 or .Net 4.5, IIS will continue to use .Net 2.0 and not .Net 4.0 until you configure it to do so.
 
 Warning: if installing on a server that is used for other websites, please consult your IT staff, since setting up ASP.Net 4.0 application pools in the following could stop other websites from working if they rely on .Net 2.0 only. 
 This reference provides a good starting point: [http://stackoverflow.com/questions/4890245/how-to-add-asp-net-4-0-as-application-pool-on-iis-7-windows-7](http://stackoverflow.com/questions/4890245/how-to-add-asp-net-4-0-as-application-pool-on-iis-7-windows-7)
 
-You can verify this is an issue by clicking Start, type **inetmgr**and then run the Internet Information Services Manager.Note: If you do not have inetmgr installed, follow this procedure to add the [IIS Management Console](#Troubleshooting-IISManagementConsole) feature to Windows)
+You can verify this is an issue by clicking Start, type **inetmgr**and then run the Internet Information Services Manager.Note: If you do not have inetmgr installed, follow this procedure to add the [IIS Management Console](#iis-management-console) feature to Windows)
 
 If you have only .Net 2.0 Application Pools, your application pools will be like this, with just two .Net 2.0 application pools shown:
 
@@ -423,13 +425,13 @@ and press Enter. You can now close the command prompt window
 
  
 
-3. Click Start, type **inetmgr**and then run the Internet Information Services Manager. Note: If you do not have inetmgr installed, follow this procedure to add the [IIS Management Console](#Troubleshooting-IISManagementConsole) feature to Windows)
+3. Click Start, type **inetmgr**and then run the Internet Information Services Manager. Note: If you do not have inetmgr installed, follow this procedure to add the [IIS Management Console](#iis-management-console) feature to Windows)
 
 You should now see the additional two .Net 4.0 Application Pools, as below: 
 
 <img src="images/dot_net_2_and_4_app_pools.jpg" style="width: 720px;"/> 
 
-Now that you have added .Net 4.0 Application Pools, if you have already installed the Rantt Web Host application, you will need to change the Application Pool that Rantt Web Host uses from the original ASP.Net 2.0 Application Pool, to use one of the new ASP.Net 4.0 Application Pools. See the section [Changing the Application Pool used by Rantt Web Host](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-ChangingtheApplicationPoolusedbyRanttWebHost) below
+Now that you have added .Net 4.0 Application Pools, if you have already installed the Rantt Web Host application, you will need to change the Application Pool that Rantt Web Host uses from the original ASP.Net 2.0 Application Pool, to use one of the new ASP.Net 4.0 Application Pools. See the section [Changing the Application Pool used by Rantt Web Host](#changing-the-application-pool-used-by-rantt-web-host) below
 
 Changing the Application Pool used by Rantt Web Host
 ----------------------------------------------------
@@ -438,7 +440,7 @@ By default ASP.Net in IIS uses ASP.Net 2.0 and ASP.Net 2.0 Application Pools.
 
 If you have already installed .Net 4.5, setup IIS to use .Net 4.0 Application Pools, you need to configure the Rantt Web Host application to use an ASP.Net 4.0 Application Pool.
 
-Click Start, type **inetmgr**then hit Enter. Note: If you do not have inetmgr installed, follow this procedure to add the [IIS Management Console](#Troubleshooting-IISManagementConsole) feature to Windows)
+Click Start, type **inetmgr**then hit Enter. Note: If you do not have inetmgr installed, follow this procedure to add the [IIS Management Console](#iis-management-console) feature to Windows)
 
 Once the Internet Information Server Manager appears, as below:
 
@@ -446,7 +448,7 @@ To verify that this is the issue, click on Application Pools, as below:
 
 <img src="images/default_incorrect_app_pools.png" style="width: 720px;"/> 
 
-If you do not see .Net 4.0 Application Pools present, then you need to [Configuring IIS to Add .Net 4.0 Support and ASP.Net 4.0 Application Pools](#Troubleshooting-ConfiguringIIStoAdd.Net4.0SupportandASP.Net4.0ApplicationPools) to add them first, then return here and continue below.
+If you do not see .Net 4.0 Application Pools present, then you need to [Configuring IIS to Add .Net 4.0 Support and ASP.Net 4.0 Application Pools](#configuring-iis-to-add-net-40-support-and-aspnet-40-application-pools) to add them first, then return here and continue below.
 
 In the above example notice there are .Net 4.0 application pools present, but there are 0 applications using them.
 
@@ -468,7 +470,7 @@ Click OK, then OK, and then close IIS Manager.
 
 Finally, assuming there are no other issues, you should now be able to browse the website.
 
-Setting up  an alternate port for IIS
+Setting up an alternate port for IIS
 -------------------------------------
 
 Port 80 is the default port use by most webservers, including IIS. If your PC or server is already using this port for a different web server, or server application, it is possible to reconfigure IIS to use a different port.
