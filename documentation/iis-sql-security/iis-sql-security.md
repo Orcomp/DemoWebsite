@@ -3,15 +3,21 @@ layout: page-with-navigation
 title: IIS & SQL Security
 permalink: /documentation/iis-sql-security/
 navigation-bar:
-    - Reference: toolbar-tools
-      Title: Toolbar Tools
+    - Reference: simplified-security
+      Title: Simplified security
+    - Reference: secure-calls-to-sql
+      Title: Secure calls to SQL
+    - Reference: individual-security
+      Title: Individual security
 ---
 
 
 There are a number of ways to secure your SQL data. No method is perfect for everyone, each has pros and cons; use these options as a guide to help determine the best solution for you:
 
-1. Simplified security / Standalone or trusted environment
-----------------------------------------------------------
+Simplified security
+-------------------
+
+####Simplified security / Standalone or trusted environment
 
 If you are hosting the web server and SQL server on a single PC and have a single user, then you may find it convenient to use many out-of-the-box defaults and to secure your data through standard windows logon.
 
@@ -27,10 +33,12 @@ or if using SQL authentication, similar to this:
 
     <ConnectionString>Data Source=SERVERSQLEXPRESS;Initial Catalog=DATABASENAME;User Id=MYSQLUSER;Password=MYSQLPASSWORD</ConnectionString>
 
- 
 
-2 Access Rantt Web Host with secure calls to SQL - without exposing passwords
------------------------------------------------------------------------------
+
+Secure calls to SQL
+-------------------
+
+#####Access Rantt Web Host with secure calls to SQL - without exposing passwords
 
 If all staff are allowed unrestricted access to Rantt Web Host, but you would like to secure SQL without adding many individual user accounts, then consider creating a special user account that is just used for Rantt Web Host to query SQL server.
 
@@ -64,8 +72,10 @@ The connection string used in the Rantt project file would typically be like thi
     <ConnectionString>Data Source=SERVERSQLEXPRESS;Initial Catalog=DATABASENAME;Integrated Security=True</ConnectionString>
  
 
-3. Individual security / fine grained control over access
----------------------------------------------------------
+Individual security
+-------------------
+
+#####Individual security / fine grained control over access
 
 If you have a small number of users who are to be provided access to Rantt Web Host, or you have already added these user accounts into SQL server security, then you might consider setting IIS to provide authentication pass-through to SQL.
 
