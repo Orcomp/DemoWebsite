@@ -5,48 +5,14 @@ permalink: /documentation/troubleshooting/
 navigation-bar:
     - Reference: minimum-requirements
       Title: Minimum requirements
-    - Reference: win-7---iis-75
-      Title: Win 7 - IIS 7.5
-    - Reference: win-8---iis-75
-      Title: Win 8 - IIS 7.5
     - Reference: browser-error-messages
       Title: Browser Error Messages
-    - Reference: http-error-40314---forbidden
-      Title: HTTP Error 403.14 - Forbidden
-    - Reference: http-error-4040---not-found
-      Title: HTTP Error 404.0 - Not Found
-    - Reference: http-error-4042---not-found
-      Title: HTTP Error 404.2 -  Not Found
-    - Reference: http-error-50019---internal-server-error
-      Title: HTTP Error 500.19 - Internal Server Error
-    - Reference: http-error-50021---internal-server-error
-      Title: HTTP Error 500.21 - Internal Server Error
-    - Reference: issues
-      Title: Issues
-    - Reference: directory-listing-shown
-      Title: Directory listing shown
-    - Reference: rantt-project-page-is-blank
-      Title: Rantt project page is blank
-    - Reference: no-data-displayed
-      Title: No data displayed
-    - Reference: no-data-displayed
-      Title: No data displayed
+    - Reference: browser-issues
+      Title: Browser Issues
     - Reference: reinstallation-or-upgrade
       Title: Reinstallation or upgrade
     - Reference: iis---web-server-configuration
       Title: IIS - Web Server Configuration
-    - Reference: iis-web-server-installation
-      Title: IIS Web Server Installation
-    - Reference: iis-management-console
-      Title: IIS Management Console
-    - Reference: how-to-disable-directory-browsing
-      Title: How to Disable Directory Browsing
-    - Reference: addingaspnet-support-to-iis-web-server
-      Title: Adding ASP.Net support to IIS Web Server
-    - Reference: netframework-45--how-to-check-and-update
-      Title: .Net Framework 4.5 - How to Check and Update
-    - Reference: configuring-iis
-      Title: Configuring IIS
 ---
 
 Troubleshooting guides to get IIS setup properly.
@@ -80,11 +46,11 @@ Here are some links that will be useful to get the Webhost project running on II
 
 Click on Control Panel, Programs, Turn Windows Features On and Off, as below:
 
-<img src="images/windows8Features2.png" alt="Drawing" style="width: 800px;"/> 
+<img src="images/windows8Features2.png" alt="Drawing" style="width: 720px;"/> 
 
 Verify that you have added ASP.Net and turned on these features:
 
-<img src="images/windows8Features.png" alt="Drawing" style="width: 800px;"/> 
+<img src="images/windows8Features.png" alt="Drawing" style="width: 720px;"/> 
  
 
 Browser Error Messages
@@ -106,7 +72,7 @@ This error appears in the web browser as you attempt to access the Rantt Web Hos
 **HTTP Error 403.14 - Forbidden.** 
 The Web server is configured to not list the contents of this directory.
 
-<img src="images/403.14_Forbidden.png" alt="Drawing" style="width: 800px;"/> 
+<img src="images/403.14_Forbidden.png" alt="Drawing" style="width: 720px;"/> 
 
 The error message would seem to imply you need directory browsing turned on.
 
@@ -120,7 +86,7 @@ This error appears in the web browser as you attempt to access the Rantt Web Ho
 **HTTP Error 404.0 - Not Found**
 The resource you are looking for has been removed, had it's name changed, or is temporarily unavailable
 
-<img src="images/404.0_error_not_installed.png" alt="Drawing" style="width: 800px;"/> 
+<img src="images/404.0_error_not_installed.png" alt="Drawing" style="width: 720px;"/> 
 
 There could be a number of reasons for this, they are all related to your browser not being able to "see" the website, and can include:
 
@@ -129,7 +95,7 @@ There could be a number of reasons for this, they are all related to your browse
 3.  You are browsing the website using the wrong web server name
 4.  Using an incorrect "port"
 5.  If the Rantt software was installed on a different server (other than your own PC or server), it is possible you have to create appropriate firewall "rules" to allow the server to accept requests from you, particularly if you are using alternate ports, other than the default port 80 - normally used for web server requests. The image below is typical of a firewall issue:
-<img src="images/port%20in%20use%20-%20port%20blocked.png" alt="Drawing" style="width: 800px;"/> 
+<img src="images/port%20in%20use%20-%20port%20blocked.png" alt="Drawing" style="width: 720px;"/> 
 6.  If Rantt was re-installed, you may get this screen, even though everything was working fine before the install.
 
 Fixes: 
@@ -143,7 +109,7 @@ If still in doubt, please ask your IT staff for further assistance.
 4.  If port 80, the default port used for webservers, is already in use then you could set the local IIS webserver you wish to use for Rantt Web Host to use a another different port. Common alternate ports include port 81, 90, 8000 or 8080. For example, if your PC or server was named say "Sinope", and port 81 was used, then the URL might be constructed in this way: [http://sinope:81/SMS/](http://sinope:81/SMS/)
 5.  Firewall settings. A symptom of firewall issues is that and you cannot browse the web server remotely (from a different PC), but can browse and use the Rantt web application "locally", on the same server or PC on which it was installed.
 Firewall settings can be quite complex, and vary considerably between Windows desktop versions and Windows Server versions. If using port 80, the default web server port, it is most likely the case that the rule was disabled and simply needs to be enabled. If on the other hand, the webserver was set to a different port, then it may be necessary to either add the port 81 to the current port 80 rules, or on some version of windows desktop/windows server, create a completely new rule to cater for port 81 web server requests. This is an example below from Server 2012 where a rule was created to allow web server requests to port 81:
-<img src="images/port%20in%20use%20-%20create%20port%2081%20firewall%20rule.png" alt="Drawing" style="width: 800px;"/> 
+<img src="images/port%20in%20use%20-%20create%20port%2081%20firewall%20rule.png" alt="Drawing" style="width: 720px;"/> 
 If still in doubt, contact your IT staff for further assistance.
 6.  See the section "Working Rantt Web Host application stops working after reinstallation or upgrade" below.
 
@@ -155,7 +121,7 @@ This error appears in the web browser as you attempt to access the Rantt Web Hos
 **HTTP Error 404.2 - Not Found
 **The page you are requesting cannot be served because of the ISAPI and CGI Restriction list settings on the Web server.
 
-<img src="images/404.2%20-%20Not%20found%20error.png" alt="Drawing" style="width: 800px;"/> 
+<img src="images/404.2%20-%20Not%20found%20error.png" alt="Drawing" style="width: 720px;"/> 
 
 This error occurs because the Application Pool was set to .Net 4.0 Classic instead of the required .Net 4.0 Integrated Pipeline. 
 
@@ -164,7 +130,7 @@ Once in Internet Information Server Manager open up the left hand section, throu
 
 Once the Advanced Settings window appears, click on the "Application Pool" to bring up the "Select Application Pool" window, then verify that the pool was set incorrectly to "ASP.Net v4.0 Classic", the incorrect settings are below:
 
-<img src="images/app_pool_set_to_classic_not_integrated.png" alt="Drawing" style="width: 800px;"/> 
+<img src="images/app_pool_set_to_classic_not_integrated.png" alt="Drawing" style="width: 720px;"/> 
 
 Change the Application Pool to "ASP.Net v4.0", the "Select Application Pool" window should now appear as below:
 
@@ -182,7 +148,7 @@ This error appears in the web browser as you attempt to access the Rantt Web Hos
 **HTTP Error 500.19 - Internal Server Error**
 The requested page cannot be accessed because the related confirmation data for the page is invalid.
 
-<img src="images/IIS7_5%20internal%20server%20error%20500_19.png" alt="Drawing" style="width: 800px;"/> 
+<img src="images/IIS7_5%20internal%20server%20error%20500_19.png" alt="Drawing" style="width: 720px;"/> 
 
 The root cause of this issue is most commonly not having installed or set up ASP.Net
 
@@ -197,12 +163,12 @@ This error appears in the web browser as you attempt to access the Rantt Web Hos
 **HTTP Error 500.21 - Internal Server Error**
 Handler "ExtensionlessUrlHandler-Integrated-4.0" has a bad module "ManagedPipelineHandler" in its module list.
 
-<img src="images/IIS7_5%2520internal%2520server%2520error%2520500_21.png" alt="Drawing" style="width: 800px;"/> 
+<img src="images/IIS7_5%2520internal%2520server%2520error%2520500_21.png" alt="Drawing" style="width: 720px;"/> 
 
 The issue here is likely that you have .Net 4.0 and .Net 4.5 installed, but have not yet [Configured IIS to add .Net 4.0 Support or .Net 4.0 Application Pools](#Troubleshooting-ConfiguringIIStoadd.Net4.0ApplicationPools) 
 You will also need to [change the Application Pool used by Rantt Web Host](#Troubleshooting-ChangingtheApplicationPoolusedbyRanttWebHost)  
 
-Issues
+Browser Issues
 ======
 
 Following are various issues that may not appear as browser errors.
@@ -212,11 +178,11 @@ Directory listing shown
 
 If, after installation of the Rantt Web Host application you don't see the Rantt project browser, after navigating to [http://localhost/SMS/](http://localhost/SMS/) but instead of the Rantt project directory page you should have, as below:
 
-<img src="images/working%20web%20page.png" style="width: 800px;"/> 
+<img src="images/working%20web%20page.png" style="width: 720px;"/> 
 
 if you see a directory listing instead, like this:
 
-<img src="images/directory-browsing.png" style="width: 800px;"/> 
+<img src="images/directory-browsing.png" style="width: 720px;"/> 
 
 then first follow the procedure below to [disable directory browsing](#Troubleshooting-HowtoDisableDirectoryBrowsing).
 
@@ -227,11 +193,11 @@ Rantt project page is blank
 
 Once you have installed Rantt web host then navigating to [http://localhost/SMS/](http://localhost/SMS/) ,
 
-<img src="images/working%20web%20page.png" style="width: 800px;"/> 
+<img src="images/working%20web%20page.png" style="width: 720px;"/> 
 
 click on a project, and if you see a blank page instead, as below:
 
-<img src="images/blank_page.png" style="width: 800px;"/> 
+<img src="images/blank_page.png" style="width: 720px;"/> 
 
 to verify this is the same issue covered here, right click the page and you should see the Microsoft Silverlight prompt (if not review IIS installation settings)
 
@@ -252,7 +218,7 @@ No data displayed
 
 If you select one of the projects in the Rantt web host project listing at [http://localhost/SMS](http://localhost/SMS) normally you should see the data in the Rantt project, as below:
 
-<img src="images/working_rantt_demo_project.png" style="width: 800px;"/> 
+<img src="images/working_rantt_demo_project.png" style="width: 720px;"/> 
 
 Instead, if you so not see the data loading wait symbol highlighted below:
 
@@ -260,7 +226,7 @@ Instead, if you so not see the data loading wait symbol highlighted below:
 
 but see a blank page, as below, with the project view frame but no data:
 
-<img src="images/no_data.png" style="width: 800px;"/> 
+<img src="images/no_data.png" style="width: 720px;"/> 
 
 Most the web services feature has not been enabled.
 
@@ -336,11 +302,11 @@ How to Disable Directory Browsing
 
 If "Directory Browsing" is enabled, you could have this web page shown to you:
 
-<img src="images/directory-browsing.png"/> 
+<img src="images/directory-browsing.png" style="width: 720px;"/> 
 
 instead of the normal Rantt Project page:
 
-<img src="images/working%20web%20page.png" style="width: 800px;"/> 
+<img src="images/working%20web%20page.png" style="width: 720px;"/> 
 
 There are two places to disable Directory Browsing:
 
@@ -350,15 +316,15 @@ Click Start, type **inetmgr**then press Enter. Note: If you do not have inetmgr 
 
 Once in the Internet Information Services Manager open the section to the left to view the SMS website
 
-<img src="images/directory_browsing_changing.png" style="width: 800px;"/> 
+<img src="images/directory_browsing_changing.png" style="width: 720px;"/> 
 
 Double click on "Directory Browsing", then you should see the following:
 
-<img src="images/directory_browsing_enabled.png" style="width: 800px;"/> 
+<img src="images/directory_browsing_enabled.png" style="width: 720px;"/> 
 
 Click on "Disable" to the right, then you should see: 
 
-<img src="images/directory_browsing_disabled.png" style="width: 800px;"/> 
+<img src="images/directory_browsing_disabled.png" style="width: 720px;"/> 
 
 Directory browsing on the Rantt Web Host website is now disabled.
 
@@ -432,7 +398,7 @@ You can verify this is an issue by clicking Start, type **inetmgr**and then run 
 
 If you have only .Net 2.0 Application Pools, your application pools will be like this, with just two .Net 2.0 application pools shown:
 
-<img src="images/only_net_2_app_pools.png" style="width: 800px;"/> 
+<img src="images/only_net_2_app_pools.png" style="width: 720px;"/> 
 
  
 The procedure to correct this is:
@@ -461,7 +427,7 @@ and press Enter. You can now close the command prompt window
 
 You should now see the additional two .Net 4.0 Application Pools, as below: 
 
-<img src="images/dot_net_2_and_4_app_pools.jpg" style="width: 800px;"/> 
+<img src="images/dot_net_2_and_4_app_pools.jpg" style="width: 720px;"/> 
 
 Now that you have added .Net 4.0 Application Pools, if you have already installed the Rantt Web Host application, you will need to change the Application Pool that Rantt Web Host uses from the original ASP.Net 2.0 Application Pool, to use one of the new ASP.Net 4.0 Application Pools. See the section [Changing the Application Pool used by Rantt Web Host](https://simulation.atlassian.net/wiki/display/DOC/Troubleshooting#Troubleshooting-ChangingtheApplicationPoolusedbyRanttWebHost) below
 
@@ -478,7 +444,7 @@ Once the Internet Information Server Manager appears, as below:
 
 To verify that this is the issue, click on Application Pools, as below:
 
-<img src="images/default_incorrect_app_pools.png" style="width: 800px;"/> 
+<img src="images/default_incorrect_app_pools.png" style="width: 720px;"/> 
 
 If you do not see .Net 4.0 Application Pools present, then you need to [Configuring IIS to Add .Net 4.0 Support and ASP.Net 4.0 Application Pools](#Troubleshooting-ConfiguringIIStoAdd.Net4.0SupportandASP.Net4.0ApplicationPools) to add them first, then return here and continue below.
 
@@ -490,13 +456,13 @@ Next click on the RHS on "Application Settings" then in the window that appears,
 
 Shown below is a typical installation where the default Application Pool for ASP.Net 2.0 is being used. You can compare the name to the listing in the image above, or once selected you will see the .Net version and type of Application Pool in the window.
 
-<img src="images/default_incorrect_app_pool.png" style="width: 800px;"/> 
+<img src="images/default_incorrect_app_pool.png" style="width: 720px;"/> 
 
 Change the Application Pool to be one of the **ASP.Net 4.0** Application Pools, as there are two, take care to select the one that has **"Integrated Pipeline".**
 
 This is shown below:
 
-<img src="images/changing_app_pools.png" style="width: 800px;"/> 
+<img src="images/changing_app_pools.png" style="width: 720px;"/> 
 
 Click OK, then OK, and then close IIS Manager.
 
@@ -525,21 +491,21 @@ looking through the list (the machine name here is "KORE"), you will note there 
 
 Next, click Start, IIS and run the Internet Information Services Manager.
 
-<img src="images/IIS_turned_off.png" style="width: 800px;"/> 
+<img src="images/IIS_turned_off.png" style="width: 720px;"/> 
 
 note in the top right corner, "Start" is enabled. This means that IIS is not running. Open up the section on the top LHS, when you see "Default" Web Site", click on it. On the right hand side you will see what port your web server would be on, if it was running
 
-<img src="images/iis_settings.png" style="width: 800px;"/> 
+<img src="images/iis_settings.png" style="width: 720px;"/> 
 
 If you have a port conflict, when you try and click "Start" you will see an error.
 
 To correct this, choose an alternate port, after considering the *netstat -a* dump, in this example, you will see port 81, 90, or 8080, all commonly used alternate ports, happen to be free.
 
-<img src="images/iis_changing_and_testing_port.png" style="width: 800px;"/> 
+<img src="images/iis_changing_and_testing_port.png" style="width: 720px;"/> 
 
  
 
 Note: The procedure shown below is for Server 2012, but very similar to Windows 7, 8 or other platforms.
 
-<img src="images/port%20in%20use%20-%20change%20port%20on%20server.png" style="width: 800px;"/> 
+<img src="images/port%20in%20use%20-%20change%20port%20on%20server.png" style="width: 720px;"/> 
 
