@@ -3,17 +3,21 @@ layout: page-with-navigation
 title: Sample Data
 permalink: /documentation/sampledata/
 navigation-bar:
-    - Reference: project-wizard
-      Title: Project Wizard
+    - Reference: introduction
+      Title: Introduction
+    - Reference: finoflex
+      Title: Finoflex
+    - Reference: elsinore
+      Title: Elsinore
+    - Reference: globex
+      Title: Globex
+    - Reference: transarcticrail
+      Title: TransArcticRail
+    - Reference: multiple-datasets
+      Title: Multiple Datasets
+    - Reference: actualplanned
+      Title: ActualPlanned
 ---
-
--   [Introduction](#Rantt-SampleData-Introduction)
--   [Finoflex](#Rantt-SampleData-Finoflex)
--   [Elsinore](#Rantt-SampleData-Elsinore)
--   [Globex](#Rantt-SampleData-Globex)
--   [TransArcticRail](#Rantt-SampleData-TransArcticRail)
--   [Multiple Datasets](#Rantt-SampleData-MultipleDatasets)
--   [ActualPlanned](#Rantt-SampleData-ActualPlanned)
 
 Introduction
 ============
@@ -22,7 +26,7 @@ The following page will give you a short introduction of the sample projects tha
 
 You can find these samples in the following folder:
 
-C:\Program Files\SimulationModelling\Rantt\SampleData
+    C:\Program Files\SimulationModelling\Rantt\SampleData
 
 Finoflex
 ========
@@ -30,8 +34,7 @@ Finoflex
 This sample project has been built with sample data for finoflex. You can the operations lined against the resource along with calendar periods. The visible are zero and 100 % efficiency calender periods. 
 
  
-
-![](/wiki/download/attachments/8224781/finoflex.png?version=1&modificationDate=1386652116218&api=v2)
+<img src="images/finoflex.png" alt="Drawing" style="width: 720px;"/> 
 
 Elsinore
 ========
@@ -40,7 +43,7 @@ Elsinore
 
 This sample project has both operations and calendar data. The calendar perios that are visible are off-shift and at-risk. The same can be seen in the calendar legend control as well.
 
-![](/wiki/download/attachments/8224781/elsinore.png?version=1&modificationDate=1386652268397&api=v2)
+<img src="images/elsinore.png" alt="Drawing" style="width: 720px;"/> 
 
  
 
@@ -51,7 +54,7 @@ Globex
 
 This sample project has the operations and operation relationships data. The child and parent relationships (as dotted lines) can be seen as shown in the screen shot.
 
-![](/wiki/download/attachments/8224781/globex.png?version=1&modificationDate=1386652578410&api=v2)
+<img src="images/globex.png" alt="Drawing" style="width: 720px;"/> 
 
 TransArcticRail
 ===============
@@ -60,7 +63,7 @@ TransArcticRail
 
 This project shows the time table of trains in the TransArctic segment. This project requires only the operations file.
 
-![](/wiki/download/attachments/8224781/ta.png?version=1&modificationDate=1386652721662&api=v2)
+<img src="images/ta.png" alt="Drawing" style="width: 720px;"/> 
 
  
 
@@ -73,7 +76,7 @@ This project has three operations file and has set up as three different dataset
 
 The below screen shot shows three different data sets against same resources.
 
-![](/wiki/download/attachments/8224781/md.png?version=1&modificationDate=1386652970778&api=v2)
+<img src="images/md.png" alt="Drawing" style="width: 720px;"/> 
 
  
 
@@ -86,4 +89,4 @@ This project is a practical example for multiple datasets. You can view actual a
 
  
 
-![](/wiki/download/attachments/8224781/app.png?version=1&modificationDate=1386653171008&api=v2)
+<img src="images/app.png" alt="Drawing" style="width: 720px;"/> 
