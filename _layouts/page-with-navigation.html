@@ -1,20 +1,94 @@
 ---
 layout: page-with-header
 ---
-<style type="text/css">
-    .navbar .active{
-        font-weight: bold;
-    }
-</style>
     <div class="col-md-9">
         {{ content }}
     </div>
+<style type="text/css">
 
-    <div class="col-md-3 col-sm-3 navbar">
-        <ul class="nav nav-tab nav-stacked list-group affix-top" data-spy="affix">
+.bs-docs-sidenav > li > a {
+    border: 1px solid #E5E5E5;
+    /*display: block;*/
+    /*margin: 0 0 -1px;*/
+    padding: 8px 14px;
+}
+
+.bs-docs-sidenav > li > a {
+    border: 1px solid #E5E5E5;
+    /*display: block;*/
+    /*margin: 0 0 -1px;*/
+    padding: 8px 14px;
+}
+
+.bs-docs-sidenav > li:first-child > a {
+    border-radius: 6px 6px 0 0;
+}
+
+.bs-docs-sidenav > li:last-child > a {
+    border-radius: 0 0 6px 6px;
+}
+
+.bs-docs-sidenav > .active > a {
+    border: 0 none;
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, -1px 0 0 rgba(0, 0, 0, 0.1) inset;
+    padding: 9px 15px;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    font-weight: bold;
+}
+
+.bs-docs-sidenav .icon-chevron-right {
+    float: right;
+    margin-right: -6px;
+    margin-top: 2px;
+    opacity: 0.25;
+}
+
+.bs-docs-sidenav > li > a:hover {
+    background-color: #F5F5F5;
+}
+
+.bs-docs-sidenav a:hover .icon-chevron-right {
+    opacity: 0.5;
+}
+
+.bs-docs-sidenav .active .icon-chevron-right, .bs-docs-sidenav .active a:hover .icon-chevron-right {
+    /*background-image: url("../img/glyphicons-halflings-white.png");*/
+    opacity: 1;
+}
+
+.bbs-docs-sidenav.affix {
+    top: 40px;
+}
+
+.bbs-docs-sidenav.affix-bottom {
+    bottom: 270px;
+    position: absolute;
+    top: auto;
+}
+.bs-docs-sidebar .nav .nav {
+    display: none;
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav>.active>ul {
+    display: block;
+}
+</style>
+    <div class="col-md-3 col-sm-3 navbar bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav" data-spy="affix">
         {% assign active = ' active' %}
             {% for item in page.navigation-bar %}
-                <li class="{{active}}"><a href="#{{item.Reference}}">{{item.Title}}</a></li>
+                <li class="{{active}}"><a href="#{{item.Reference}}">{{item.Title}}</a>
+                  <ul class="nav">
+                    <li class=""><a href="#js-individual-compiled">Individual or compiled</a></li>
+                    <li class=""><a href="#js-data-attrs">Data attributes</a></li>
+                    <li class=""><a href="#js-programmatic-api">Programmatic API</a></li>
+                    <li class=""><a href="#js-noconflict">No conflict</a></li>
+                    <li class=""><a href="#js-events">Events</a></li>
+                    <li class=""><a href="#callout-third-party-libs">Third-party libraries</a></li>
+                  </ul>
+                </li>
                 {% assign active = '' %}
             {% endfor %}
         </ul>
