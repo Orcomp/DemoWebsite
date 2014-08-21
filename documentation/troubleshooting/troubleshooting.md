@@ -25,15 +25,15 @@ Operating System: Window Vista or later, and has been tested on Windows 7, Windo
 
 .Net framework: Rantt Web Host requires a minimum of .Net version 4.5
 
-Web Server: Rantt Web Host requires Internet Information Server (IIS) webserver option to be installed, setup to use ASP.Net and the .Net 4.0 Application Pool with Integrated Pipeline.
-Note: If IIS cannot use port 80, the default web server port, because the port is already in use, then consider [Setting up an alternate port for IIS](#setting-up-an-alternate-port-for-iis).
+Web Server: Rantt Web Host requires Internet Information Server (IIS) webserver option to be installed, setup to use ASP.Net and the .Net 4.0 Application Pool with Integrated Pipeline.
+Note: If IIS cannot use port 80, the default web server port, because the port is already in use, then consider [Setting up an alternate port for IIS](#setting-up-an-alternate-port-for-iis).
 
 Win 7 - IIS 7.5
 ---------------
 By default Windows 7 does not have ASP.Net installed; this can result in the error "[HTTP Error 500.19 - Internal Server Error](
 #http-error-50019---internal-server-error), The requested page cannot be accessed because the related confirmation data for the page is invalid."
 
-If ASP.Net is set to .Net version 2.0 instead of ver. 4.0, this will result in "[HTTP Error 500.21 - Internal Server Error](#http-error-50021---internal-server-error), Handler "ExtensionlessUrlHandler-Integrated-4.0" has a bad module "ManagedPipelineHandler" in its module list."
+If ASP.Net is set to .Net version 2.0 instead of ver. 4.0, this will result in "[HTTP Error 500.21 - Internal Server Error](#http-error-50021---internal-server-error), Handler "ExtensionlessUrlHandler-Integrated-4.0" has a bad module "ManagedPipelineHandler" in its module list."
 
 Win 8 - IIS 7.5
 ---------------
@@ -46,12 +46,12 @@ Here are some links that will be useful to get the Webhost project running on II
 
 Click on Control Panel, Programs, Turn Windows Features On and Off, as below:
 
-<img src="images/windows8Features2.png" alt="Drawing" style="width: 720px;"/> 
+<img src="images/windows8Features2.png" alt="Drawing" style="width: 720px;"/> 
 
 Verify that you have added ASP.Net and turned on these features:
 
-<img src="images/windows8Features.png" alt="Drawing" style="width: 720px;"/> 
- 
+<img src="images/windows8Features.png" alt="Drawing" style="width: 720px;"/> 
+ 
 
 Browser Error Messages
 ======================
@@ -60,7 +60,7 @@ Here are a list of various browser error messages with details of the respective
 
 -   [HTTP Error 403.14 - Forbidden](#http-error-40314---forbidden)
 -   [HTTP Error 404.0 - Not Found](#http-error-4040---not-found)
--   [HTTP Error 404.2 -  Not Found](#http-error-4042---not-found)
+-   [HTTP Error 404.2 -  Not Found](#http-error-4042---not-found)
 -   [HTTP Error 500.19 - Internal Server Error](#http-error-50019---internal-server-error)
 -   [HTTP Error 500.21 - Internal Server Error](#http-error-50021---internal-server-error)
 
@@ -73,11 +73,11 @@ This error appears in the web browser as you attempt to access the Rantt Web Hos
 
 The Web server is configured to not list the contents of this directory.
 
-<img src="images/403.14_Forbidden.png" alt="Drawing" style="width: 720px;"/> 
+<img src="images/403.14_Forbidden.png" alt="Drawing" style="width: 720px;"/> 
 
 The error message would seem to imply you need directory browsing turned on.
 
-Instead the issue is related to either not having added [.Net 4.0 Application Pools](#configuring-iis-toaddnet-40-support-and-aspnet-40-application-pools) or, if added, not setting the [Rantt Web Host application to use the .Net 4.0 application pool](#changing-the-application-pool-used-by-rantt-web-host).
+Instead the issue is related to either not having added [.Net 4.0 Application Pools](#configuring-iis-toaddnet-40-support-and-aspnet-40-application-pools) or, if added, not setting the [Rantt Web Host application to use the .Net 4.0 application pool](#changing-the-application-pool-used-by-rantt-web-host).
 
 HTTP Error 404.0 - Not Found
 ----------------------------
@@ -114,7 +114,7 @@ Firewall settings can be quite complex, and vary considerably between Windows de
 If still in doubt, contact your IT staff for further assistance.
 6.  See the section "Working Rantt Web Host application stops working after reinstallation or upgrade" below.
 
-HTTP Error 404.2 -  Not Found
+HTTP Error 404.2 - Not Found
 -----------------------------
 
 This error appears in the web browser as you attempt to access the Rantt Web Host website:
