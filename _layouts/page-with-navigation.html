@@ -74,20 +74,22 @@ layout: page-with-header
 .bs-docs-sidebar .nav>.active>ul {
     display: block;
 }
+.bs-docs-sidebar .nav>.active>ul .active {
+    font-weight: bold; /* active subitem*/
+}
 </style>
     <div class="col-md-3 col-sm-3 navbar bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav" data-spy="affix">
         {% assign active = ' active' %}
             {% for item in page.navigation-bar %}
                 <li class="{{active}}"><a href="#{{item.Reference}}">{{item.Title}}</a>
-                  <ul class="nav">
-                    <li class=""><a href="#js-individual-compiled">Individual or compiled</a></li>
-                    <li class=""><a href="#js-data-attrs">Data attributes</a></li>
-                    <li class=""><a href="#js-programmatic-api">Programmatic API</a></li>
-                    <li class=""><a href="#js-noconflict">No conflict</a></li>
-                    <li class=""><a href="#js-events">Events</a></li>
-                    <li class=""><a href="#callout-third-party-libs">Third-party libraries</a></li>
-                  </ul>
+                    {% if item.SubItems.size > 0  %}
+                      <ul class="nav">  
+                        {% for subItem in item.SubItems %}
+                            <li><a href="#{{subItem.Reference}}">{{subItem.Title}}</a></li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
                 </li>
                 {% assign active = '' %}
             {% endfor %}
