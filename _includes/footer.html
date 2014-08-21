@@ -39,13 +39,7 @@
 
 <script type="text/javascript">
 // refresh scrollspy
-$(document).ready(function() {
-    setTimeout(updateScrollSpy, 1000);
+$('.loading-container').on("remove", function () {
+    var $spy = $(this).scrollspy('refresh')
 });
-function updateScrollSpy() {
-    return;
-    $('[data-spy="scroll"]').each(function () {
-      var $spy = $(this).scrollspy('refresh')
-    });
-}
 </script>
