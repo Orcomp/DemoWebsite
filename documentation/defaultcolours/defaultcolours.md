@@ -1,10 +1,8 @@
 ---
-layout: page-with-header
+layout: page-with-navigation
 title: Default Colours
 permalink: /documentation/defaultcolours/
-navigation-bar:
-    - Reference: project-wizard
-      Title: Project Wizard
+
 ---
 
     Rantt will automatically assign colors to operations based on the attribute selected in the legend control and their corresponding values.
