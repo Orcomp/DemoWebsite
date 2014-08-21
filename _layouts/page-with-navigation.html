@@ -83,15 +83,14 @@ layout: page-with-header
         {% assign active = ' active' %}
             {% for item in page.navigation-bar %}
                 <li class="{{active}}"><a href="#{{item.Reference}}">{{item.Title}}</a>
-                    {% if item.SubItems.size > 0  %}
                       <ul class="nav">  
+                    {% if item.SubItems.size > 0  %}
                         {% for subItem in item.SubItems %}
                             <li><a href="#{{subItem.Reference}}">{{subItem.Title}}</a></li>
                         {% endfor %}
-                      </ul>
                     {% endif %}
+                      </ul>
                 </li>
-                {% assign active = '' %}
             {% endfor %}
         </ul>
     </div>
