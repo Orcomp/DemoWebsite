@@ -6,76 +6,134 @@ layout: page-with-header
     </div>
 <style type="text/css">
 
-.bs-docs-sidenav > li > a {
-    border: 1px solid #E5E5E5;
-    /*display: block;*/
-    /*margin: 0 0 -1px;*/
-    padding: 8px 14px;
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.bs-docs-sidebar.affix {
+  position: static;
+}
+@media (min-width: 768px) {
+  .bs-docs-sidebar {
+    padding-left: 20px;
+  }
 }
 
-.bs-docs-sidenav > li > a {
-    border: 1px solid #E5E5E5;
-    /*display: block;*/
-    /*margin: 0 0 -1px;*/
-    padding: 8px 14px;
+/* First level of nav */
+.bs-docs-sidenav {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.bs-docs-sidenav > li:first-child > a {
-    border-radius: 6px 6px 0 0;
+/* All levels of nav */
+.bs-docs-sidebar .nav > li > a {
+  display: block;
+  padding: 4px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #999;
+}
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
+  padding-left: 19px;
+  color: #309FB9;
+  text-decoration: none;
+  background-color: transparent;
+  border-left: 1px solid #309FB9;
+}
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+  padding-left: 18px;
+  font-weight: bold;
+  color: #309FB9;
+  background-color: transparent;
+  border-left: 2px solid #309FB9;
 }
 
-.bs-docs-sidenav > li:last-child > a {
-    border-radius: 0 0 6px 6px;
-}
-
-.bs-docs-sidenav > .active > a {
-    border: 0 none;
-    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, -1px 0 0 rgba(0, 0, 0, 0.1) inset;
-    padding: 9px 15px;
-    position: relative;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
-    z-index: 2;
-    font-weight: bold;
-}
-
-.bs-docs-sidenav .icon-chevron-right {
-    float: right;
-    margin-right: -6px;
-    margin-top: 2px;
-    opacity: 0.25;
-}
-
-.bs-docs-sidenav > li > a:hover {
-    background-color: #F5F5F5;
-}
-
-.bs-docs-sidenav a:hover .icon-chevron-right {
-    opacity: 0.5;
-}
-
-.bs-docs-sidenav .active .icon-chevron-right, .bs-docs-sidenav .active a:hover .icon-chevron-right {
-    /*background-image: url("../img/glyphicons-halflings-white.png");*/
-    opacity: 1;
-}
-
-.bbs-docs-sidenav.affix {
-    top: 40px;
-}
-
-.bbs-docs-sidenav.affix-bottom {
-    bottom: 270px;
-    position: absolute;
-    top: auto;
-}
+/* Nav: second level (shown on .active) */
 .bs-docs-sidebar .nav .nav {
-    display: none;
-    padding-bottom: 10px;
+  display: none; /* Hide by default, but at >768px, show it */
+  padding-bottom: 10px;
 }
-.bs-docs-sidebar .nav>.active>ul {
+.bs-docs-sidebar .nav .nav > li > a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav > li > a:focus {
+  padding-left: 29px;
+}
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
+  padding-left: 28px;
+  font-weight: 500;
+}
+
+/* Back to top (hidden on mobile) */
+.back-to-top,
+.bs-docs-theme-toggle {
+  display: none;
+  padding: 4px 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+}
+.back-to-top:hover,
+.bs-docs-theme-toggle:hover {
+  color: #309FB9;
+  text-decoration: none;
+}
+.bs-docs-theme-toggle {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .back-to-top,
+  .bs-docs-theme-toggle {
     display: block;
+  }
 }
-.bs-docs-sidebar .nav>.active>ul .active {
-    font-weight: bold; /* active subitem*/
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+  .bs-docs-sidebar .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidebar */
+  .bs-docs-sidebar.affix,
+  .bs-docs-sidebar.affix-bottom {
+    width: 213px;
+  }
+  .bs-docs-sidebar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 20px;
+  }
+  .bs-docs-sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .bs-docs-sidebar.affix-bottom .bs-docs-sidenav,
+  .bs-docs-sidebar.affix .bs-docs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .bs-docs-sidebar.affix-bottom,
+  .bs-docs-sidebar.affix {
+    width: 263px;
+  }
 }
 </style>
     <div class="col-md-3 col-sm-3 navbar bs-docs-sidebar">
@@ -83,13 +141,15 @@ layout: page-with-header
         {% assign active = ' active' %}
             {% for item in page.navigation-bar %}
                 <li class="{{active}}"><a href="#{{item.Reference}}">{{item.Title}}</a>
-                      <ul class="nav">  
                     {% if item.SubItems.size > 0  %}
-                        {% for subItem in item.SubItems %}
-                            <li><a href="#{{subItem.Reference}}">{{subItem.Title}}</a></li>
-                        {% endfor %}
-                    {% endif %}
+                      <ul class="nav">  
+                            {% for subItem in item.SubItems %}
+                                <li><a href="#{{subItem.Reference}}">{{subItem.Title}}</a></li>
+                                {% assign active = '' %}
+                            {% endfor %}
                       </ul>
+                    {% endif %}
+                    {% assign active = '' %}
                 </li>
             {% endfor %}
         </ul>
