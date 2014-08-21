@@ -5,12 +5,39 @@ permalink: /documentation/troubleshooting/
 navigation-bar:
     - Reference: minimum-requirements
       Title: Minimum requirements
+      SubItems:
+          - Reference: win-7---iis-75
+            Title: Win 7 - IIS 7.5
+          - Reference: win-8---iis-75
+            Title: Win 8 - IIS 7.5
+
     - Reference: browser-error-messages
       Title: Browser Error Messages
+      SubItems:
+          - Reference: http-error-40314---forbidden
+            Title: 403.14 - Forbidden
+          - Reference: http-error-4040---not-found
+            Title: 404.0 - Not Found
+          - Reference: http-error-4042---not-found
+            Title: 404.2 - Not Found
+          - Reference: http-error-50019---internal-server-error
+            Title: 500.19 - Internal Server Error
+          - Reference: http-error-50021---internal-server-error
+            Title: 500.21 - Internal Server Error
+
     - Reference: browser-issues
       Title: Browser Issues
+      SubItems:
+          - Reference: directory-listing-shown
+            Title: Directory listing shown
+          - Reference: rantt-project-page-is-blank
+            Title: Rantt project page is blank
+          - Reference: no-data-displayed
+            Title: No data displayed
+
     - Reference: reinstallation-or-upgrade
       Title: Reinstallation or upgrade
+
     - Reference: iis---web-server-configuration
       Title: IIS - Web Server Configuration
 ---
