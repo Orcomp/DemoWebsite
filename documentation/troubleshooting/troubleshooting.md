@@ -37,9 +37,28 @@ navigation-bar:
 
     - Reference: reinstallation-or-upgrade
       Title: Reinstallation or upgrade
-
+      SubItems:
+          - Reference: application-stops-working-after-reinstallation-or-upgrade
+            Title: Application stops working
     - Reference: iis---web-server-configuration
       Title: IIS - Web Server Configuration
+      SubItems:
+          - Reference: iis-web-server-installation
+            Title: IIS Web Server Installation
+          - Reference: iis-management-console
+            Title: IIS Management Console
+          - Reference: how-to-disable-directory-browsing
+            Title: How to Disable Directory Browsing
+          - Reference: adding-aspnet-support-to-iis-web-server
+            Title: Adding ASP.Net support to IIS
+          - Reference: net-framework-45---how-to-check-and-update
+            Title: .Net - How to Check and Update
+          - Reference: configuring-iis-to-add-net-40-support-and-aspnet-40-application-pools
+            Title: Add .Net 4.0 Support
+          - Reference: changing-the-application-pool-used-by-rantt-web-host
+            Title: Changing the Application Pool
+          - Reference: setting-up-an-alternate-port-for-iis
+            Title: Setting up an alternate port for IIS
 ---
 
 Troubleshooting guides to get IIS setup properly.
