@@ -20,11 +20,8 @@ navigation-bar:
       Title: Attributes in Datarow
 ---
 
-# Workspace Settings2
+# Workspace Settings
 
-
- Hello there
- 
 A workspace allows you to:
 
 - Configure the Gantt chart exactly the way you want it to look.
