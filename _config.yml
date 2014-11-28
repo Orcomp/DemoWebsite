@@ -8,4 +8,3 @@ include: [_colorpicker.js, _handlebars.js, _jquery.placeholder.js, _scripts.js, 
 # Build settings
 markdown: kramdown
 permalink: pretty
-destination: ./website
