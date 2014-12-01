@@ -2,7 +2,7 @@
 title: Rantt
 email: info@sesolutions.net.au
 description: "Resource Gantt"
-url: http://orcomp.github.io/Web.Rantt
+url: http://www.resourcegantt.com
 include: [_colorpicker.js, _handlebars.js, _jquery.placeholder.js, _scripts.js, _jq.js, _skinchooser.js, _skins.js, _colorpicker.css]
 exclude: [vendor]
 
