@@ -1,7 +1,7 @@
 ---
 layout: page-with-navigation
 title: Documentation
-permalink: /documentation/introduction/
+permalink: /documentation/workspaces/
 root: true
 navigation-bar:
     - Reference: workspace-settings
