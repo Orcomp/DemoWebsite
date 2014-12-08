@@ -22,8 +22,3 @@ Product Highlights
 - Available as a desktop or web-browser application
 - Flexible data sources (can read csv or Excel files or database tables or views.)
 
-
-Features
-=========
-
-This is an example
