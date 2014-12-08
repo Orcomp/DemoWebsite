@@ -9,17 +9,7 @@ navigation-bar:
       Title: Installation
       - Reference: required-data
       Title: Required Data
-      SubItems:
-		- Reference: operation-csv-file
-		  Title: Operation csv file
-		- Reference: calendar-periods-csv-file
-		  Title: Calendar Periods csv file
-		- Reference: operation-relationships-csv-file
-		  Title: Operation relationships csv file
 ---
-
-Getting Started
-=============
 
 Prerequisites
 --------------
@@ -44,7 +34,6 @@ Sample project files can also be found in this installation folder under the fol
 - CurrentTime (only Operations)
 
 Workspaces and settings files are saved in %AppData%/Wild Gums/Rantt
-
 
 Required Data
 -------------
@@ -118,5 +107,4 @@ When you right click an operation and if this operation is mentioned in the Oper
  
 TODO: Show relationship lines
  
-
  
