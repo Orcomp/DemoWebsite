@@ -2,6 +2,11 @@
 layout: page-with-navigation
 title: Getting Started
 permalink: /documentation/gettingstarted/
+navigation-bar:
+    - Reference: prerequisites
+      Title: Prerequisites
+    - Reference: installation
+      Title: Installation
 ---
 
 Getting Started
@@ -19,7 +24,7 @@ Installation
 
 Double click on the executable and follow through the prompts.
 
-The program will be installed in "C:\Program Files (x86)\Wild Gums\Rantt"
+The program will be installed in "C:\Program Files (x86)\Wild Gums\Rantt for Desktop"
 
 Sample project files can also be found in this installation folder under the following folder names:
 - ActualPlanned (two datasets are defined in the same project)
