@@ -2,6 +2,11 @@
 layout: page-with-navigation
 title: Introduction
 permalink: /documentation/introduction/
+navigation-bar:
+    - Reference: introduction
+      Title: Introduction
+    - Reference: product-highlights
+      Title: Product Highlights
 ---
 
 Introduction
