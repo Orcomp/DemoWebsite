@@ -26,3 +26,4 @@ Product Highlights
 - Fast / Able to display large datasets with thousands of operations seamlessly
 - Available as a desktop or web-browser application
 - Flexible data sources (can read csv or Excel files or database tables or views.)
+
