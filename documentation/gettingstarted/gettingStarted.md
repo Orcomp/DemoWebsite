@@ -7,8 +7,15 @@ navigation-bar:
       Title: Prerequisites
     - Reference: installation
       Title: Installation
-      - Reference: required-data
+    - Reference: required-data
       Title: Required Data
+	  SubItems:
+		- Reference: operation-csv-file
+		  Title: Operation csv file
+		- Reference: calendar-periods-csv-file
+		  Title: Calendar Periods csv file
+		- Reference: operation-relationships-csv-file
+		  Title: Operation relationships csv file
 ---
 
 Prerequisites
@@ -56,22 +63,22 @@ The minimum required fields in order to display operations on the Gantt chart ar
 - Start time
 - End time
 
-![Operation csv file](./img/rantt_operations.png)
+<img src="img/rantt_operations.png" />
  
 The wording in the column header is insignificant but will need to mapped to the required fields during the project creation.
 
 Other fields may be included and will be available as contextual information associated with the operation. 
 The visibility of these additional fields can be fully customized. An example of a csv file with multiple fields is shown below.
 
-![Operation csv file with extra columns](./img/rantt_operations2.png)
+<img src="img/rantt_operations2.png" />
 
 These additional fields will be used by Rantt to facilitate the analysis of your data by:
 
 1. Being visible as tooltips when hovering over the operation
-[Tooltips](./img/rantt_tooltip.png)
+<img src="img/rantt_tooltip.png" />
 
 2. Allowing you to colour operations by the value of these fields via the legend control
-![Legend Control](./img/rantt_legendControl.png)
+<img src="img/rantt_legendControl.png" />
 
 ### Calendar Periods csv file
 
@@ -86,10 +93,10 @@ A calendar period is defined by:
 - End time
 
 This data file will look like the picture shown below:
-![Calendar Periods](./img/rantt_calendarPeriods.png)
+<img src="img/rantt_calendarPeriods.png" />
 
 Each calendar period will by default be displayed as a grey rectangle. The colour for a particular calendar state can be changed from the "Legend Control" as shown below:
-![Calendar Legend](./img/rantt_calendarLegend.png)
+<img src="img/rantt_calendarLegend.png" />
 
 ### Operation Relationships csv file
 
