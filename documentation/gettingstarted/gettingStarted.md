@@ -9,13 +9,13 @@ navigation-bar:
       Title: Installation
     - Reference: required-data
       Title: Required Data
-	  SubItems:
-		- Reference: operation-csv-file
-		  Title: Operation csv file
-		- Reference: calendar-periods-csv-file
-		  Title: Calendar Periods csv file
-		- Reference: operation-relationships-csv-file
-		  Title: Operation relationships csv file
+      SubItems:
+        - Reference: operation-csv-file
+          Title: Operation csv file
+        - Reference: calendar-periods-csv-file
+          Title: Calendar Periods csv file
+        - Reference: operation-relationships-csv-file
+          Title: Operation relationships csv file
 ---
 
 Prerequisites
