@@ -51,6 +51,7 @@ The Rantt application needs a project file (.rprj) file in order to know where t
 A project can include multiple datasets.
 
 A dataset is made up of:
+
 - An operations file (compulsory)
 - A calendar file (optional)
 - An Operation Relationships file (optional)
@@ -69,8 +70,9 @@ The minimum required fields in order to display operations on the Gantt chart ar
  
 The wording in the column header is insignificant but will need to mapped to the required fields during the project creation.
 
+**NOTE:**
 ```
-**NOTE**: The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
+The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
 ```
 
 More columns can be included and will be available as contextual information associated with the operation. 
@@ -109,8 +111,9 @@ Each calendar period will by default be displayed as a grey rectangle. The colou
 
 ![Calendar Legend](img/rantt_calendarLegend.png)
 
+**NOTE:**
 ```
-**NOTE**: The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
+The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
 ```
 
 ### Operation Relationships csv file
@@ -120,8 +123,12 @@ The fields required in this file are:
 - From
 - To
  
- These fields will hold a unique identifier number for each operation.
- In order for this file to work with Rantt, the Operations.csv file will need an extra "Reference" column, which will contain the unique identifier for each operation.
+These fields will hold a unique identifier number for each operation.
+In order for this file to work with Rantt, the Operations.csv file will need an extra "Reference" column, which will contain the unique identifier for each operation.
+
+![Operation with reference](img/rantt_operations3.png)
+
+![Operation with reference](img/relationships.png)
  
 When you right click an operation and if this operation is mentioned in the OperationRelationships csv file, then three right click options are shown.
 
