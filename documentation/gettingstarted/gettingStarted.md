@@ -128,7 +128,7 @@ In order for this file to work with Rantt, the Operations.csv file will need an 
 
 ![Operation with reference](img/rantt_operations3.png)
 
-![Operation with reference](img/relationships.png)
+![Operation with reference](img/rantt_relationships.png)
  
 When you right click an operation and if this operation is mentioned in the OperationRelationships csv file, then three right click options are shown.
 
