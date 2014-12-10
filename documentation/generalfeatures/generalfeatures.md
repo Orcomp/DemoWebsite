@@ -6,9 +6,9 @@ permalink: /documentation/generalfeatures/
 ---
 # General Features
 
-- Search and filter
+- Search and filter operations
 - Highlight operations
-- Highlight Current time
+- Highlight current time
 - Row plots
 - Data Rows
 - Highlight Past

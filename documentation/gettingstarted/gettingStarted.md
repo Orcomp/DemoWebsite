@@ -71,9 +71,9 @@ The minimum required fields in order to display operations on the Gantt chart ar
 The wording in the column header is insignificant but will need to mapped to the required fields during the project creation.
 
 **NOTE:**
-```
-The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
-```
+
+> The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
+
 
 More columns can be included and will be available as contextual information associated with the operation. 
 The visibility of these additional fields can be fully customized. An example of a csv file with multiple fields is shown below.
@@ -112,9 +112,9 @@ Each calendar period will by default be displayed as a grey rectangle. The colou
 ![Calendar Legend](img/rantt_calendarLegend.png)
 
 **NOTE:**
-```
-The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
-```
+
+> The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
+
 
 ### Operation Relationships csv file
 
