@@ -33,6 +33,7 @@ Double click on the executable and follow through the prompts.
 The program will be installed in "C:\Program Files (x86)\Wild Gums\Rantt for Desktop"
 
 Sample project files can also be found in this installation folder under the following folder names:
+
 - ActualPlanned (two datasets are defined in the same project)
 - Elsinore (Operations and Calendar)
 - FinoFlex (Operations and Calendar)
@@ -59,6 +60,7 @@ For more information on how to create a project file, please visit the Rantt Pro
 ### Operation csv file
 
 The minimum required fields in order to display operations on the Gantt chart are:
+
 - Resource
 - Start time
 - End time
@@ -67,7 +69,9 @@ The minimum required fields in order to display operations on the Gantt chart ar
  
 The wording in the column header is insignificant but will need to mapped to the required fields during the project creation.
 
+```
 **NOTE**: The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
+```
 
 More columns can be included and will be available as contextual information associated with the operation. 
 The visibility of these additional fields can be fully customized. An example of a csv file with multiple fields is shown below.
@@ -91,8 +95,9 @@ This file is optional and contains a row for each period of time you want to dis
 Generally "Off Shift" periods are worth displaying in order to provide a better understanding of the schedule.
 
 A calendar period is defined by:
-- Name of the Calendar State
-- The resource it affects
+
+- Resource
+- Calendar state name
 - Start time
 - End time
 
@@ -104,9 +109,14 @@ Each calendar period will by default be displayed as a grey rectangle. The colou
 
 ![Calendar Legend](img/rantt_calendarLegend.png)
 
+```
+**NOTE**: The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
+```
+
 ### Operation Relationships csv file
 
 The fields required in this file are:
+
 - From
 - To
  
@@ -114,6 +124,7 @@ The fields required in this file are:
  In order for this file to work with Rantt, the Operations.csv file will need an extra "Reference" column, which will contain the unique identifier for each operation.
  
 When you right click an operation and if this operation is mentioned in the OperationRelationships csv file, then three right click options are shown.
+
 - Show Parent Relationships
 - Show child Relationships
 - Show All Relationships
