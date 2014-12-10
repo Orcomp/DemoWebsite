@@ -25,23 +25,25 @@ Prerequisites
 - CPU:  1.7 GHz
 - RAM: 2 GB
 
+
 Installation
 ------------
 
 Double click on the executable and follow through the prompts.
 
-The program will be installed in "C:\Program Files (x86)\Wild Gums\Rantt for Desktop"
+The program will be installed in `C:\Program Files (x86)\Wild Gums\Rantt for Desktop`
 
 Sample project files can also be found in this installation folder under the following folder names:
 
 - ActualPlanned (two datasets are defined in the same project)
 - Elsinore (Operations and Calendar)
 - FinoFlex (Operations and Calendar)
-- Globex (Operations and Operation Relationships)
+- Globex (Operations and Relationships)
 - MultiDataset (Multiple Datasets)
 - CurrentTime (only Operations)
 
-Workspaces and settings files are saved in %AppData%/Wild Gums/Rantt
+Workspaces and settings files are saved in `%AppData%/Wild Gums/Rantt`
+
 
 Required Data
 -------------
@@ -58,6 +60,7 @@ A dataset is made up of:
 
 For more information on how to create a project file, please visit the Rantt Project Creator page.
 
+
 ### Operation csv file
 
 The minimum required fields in order to display operations on the Gantt chart are:
@@ -70,7 +73,7 @@ The minimum required fields in order to display operations on the Gantt chart ar
  
 The wording in the column header is insignificant but will need to mapped to the required fields during the project creation.
 
-**NOTE:**
+**Note:**
 
 > The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
 
@@ -82,13 +85,14 @@ The visibility of these additional fields can be fully customized. An example of
 
 These additional fields will be used by Rantt to facilitate the analysis of your data by:
 
-1. Being visible as tooltips when hovering over the operation
+- Being visible as tooltips when hovering over the operation:
 
 ![Tooltips](img/rantt_tooltip.png)
 
-2. Allowing you to colour operations by the value of these fields via the legend control
+- Allowing you to colour operations by the value of these fields via the legend control:
 
 ![Legend Control](img/rantt_legendControl.png)
+
 
 ### Calendar Periods csv file
 
@@ -111,7 +115,7 @@ Each calendar period will by default be displayed as a grey rectangle. The colou
 
 ![Calendar Legend](img/rantt_calendarLegend.png)
 
-**NOTE:**
+**Note:**
 
 > The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
 
