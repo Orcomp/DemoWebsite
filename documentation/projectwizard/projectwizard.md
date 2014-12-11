@@ -90,7 +90,7 @@ Only enable this option if the wizard does not allow you save your project becau
 Operation Dataset
 -----------------
 
-![Operation Dataset](images/wizard_Oepration.png)
+![Operation Dataset](images/wizard_Operation.png)
 
 The inputs required for this screen include:
 
