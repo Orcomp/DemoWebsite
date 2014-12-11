@@ -94,21 +94,22 @@ Operation Dataset
 
 The inputs required for this screen include:
 
-1.  Name – The dataset name which will be used in the Gantt chart if multiple datasets are defined.
-1.  Data Source type – Can either be:
-    1. CSV (file)
-	1. Excel Spreadsheet
-    1. DB (table or view)
-1.  Date Representation – Can either be:
+1.  Name: The dataset name which will be used in the Gantt chart if multiple datasets are defined.
+1.  Data Source type: Can either be:
+    1. a CSV (file)
+	1. an Excel Spreadsheet
+    1. a Database table (or view)
+1.  Date Representation: Can either be:
     1.  Absolute: For fixed start and end times (which is the most frequently used option)
     1.  Relative: For start and end times that are defined in terms of numbers (either integers or floats). If this option is selected a "Start Date" field will appear, from which the relative time will start, as well as a "Unit of time" field, which corresponds to the unit of time used in the start and end time fields. 
-        Relative time is generally used for simulation data that starts from time "0".
+        
+		Relative time is generally used for simulation data that starts from time "0".
         ![](images/RelativeDates.png)
-1.  File – The location and name of the operation file. If a database source is selected you will be prompted for a connection string and database table name:
+1.  File: The location and name of the operation file. If a database source is selected you will be prompted for a connection string and database table name:
     ![](images/DbOptions.png)
     The "Table Name" can either be a physical database table or a view.
-1.  Default Attribute – Select the attribute that is the most significant for you.
-1.  Field Mappings – The wizard will try and automatically match the column or fields names to the required attributes. If it is unsuccessful you will have to map the attributes manually.
+1.  Default Attribute: Select the attribute that is the most significant for you.
+1.  Field Mappings: The wizard will try and automatically match the column or fields names to the required attributes. If it is unsuccessful you will have to map the attributes manually.
     1.  Resource
     1.  Start Time
     1.  End TIme
