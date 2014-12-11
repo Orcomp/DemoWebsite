@@ -7,8 +7,8 @@ navigation-bar:
       Title: Introduction
     - Reference: project-file-structure
       Title: Project File Structure
-    - Reference: using-the-project-creator-wizard
-      Title: Using the Project Creator Wizard
+    - Reference: creating-a-project
+      Title: Creating A Project
     - Reference: general-information
       Title: General Information
     - Reference: operation-dataset
@@ -24,6 +24,8 @@ navigation-bar:
     - Reference: summary
       Title: Summary
 ---
+
+
 Introduction
 ============
 
@@ -31,24 +33,32 @@ In order to use the Rantt application (both desktop and web versions), you will 
 
 The Rantt Project Creator is a small utility wizard that will help you set up a project file easily.
 
+**Note:**
 
 > A .rprj file is simply an xml file which can be constructed manually, however the wizard provides a simple user interface to facilitate this task.
 
+You can create a new project from the file menu:
 
-Once a project file has been created it can be opened in the Rantt application to display the data.
-
-The project can be created by starting the "Rantt Management Viewer". And clicking on the "create project" tool button.
-
-![](images/createprj.png)
+![Create Project](images/createProject.png)
 
 Project File Structure
 ======================
 
+The project file contains information about the data you want to import into Rantt.
+
 A project file can contain multiple datasets.
 
-A dataset is made up of a (compulsory) "operation" data source, an (optional) "Operationsrelationship" and an (optional) "calendar" data source. These data sources can come from either a csv file or a database table.
+A dataset is made up of:
 
-Using the Project Creator Wizard
+- An operation data source (compulsory)
+- A Calendar data source (optional)
+- An Operations Relationship data source (optional)
+
+These data sources can either be a csv file, an Excel spreadsheet or a database table (or view).
+
+A project can contain multiple datasets, which makes it easier to compare data.
+
+Creating A Project
 ================================
 
 The first screen you will see when you start the wizard is the General Information screen.
