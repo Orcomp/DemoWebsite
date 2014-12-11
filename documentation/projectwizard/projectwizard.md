@@ -70,16 +70,21 @@ The first screen is the general information.
 
 This screen contains the following fields:
 
-1.  Name - The project name
-2.  Culture - Select your culture
-3.  First day of the week - Select the first day of the week
-4.  Start Date - Optional
-5.  End Date - Optional
+#. Name: The project name
+#. Culture: Select your countries culture
+#. First day of the week: Select the first day of the week
+#. Default Time Format: Either 12 Hrs or 24 Hrs format
+#. Start Date - Optional
+#. End Date - Optional
     
-**Note**
+**Note:**
+
 > **Large database tables**
 > 
 > The Start and End dates are generally used to filter the data coming from large database tables. Only the data contained within this date range will be retrieved.
+
+The disable validation checkbox at the bottom right corner of the screen should be left unticked.
+Only enable this option if the wizard does not allow you save your project because of validation issues.
 
 
 Operation Dataset
