@@ -146,7 +146,7 @@ The result will be:
 
 ![Relationship Lines](img/rantt_relationshipLines.png)
 
-**NOTE:**
+**Note:**
 
 > In order to make the relationship lines disappear simply double click anywhere on the Gantt chart.
  
