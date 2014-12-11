@@ -140,6 +140,14 @@ When you right click an operation and if this operation is mentioned in the Oper
 - Show child Relationships
 - Show All Relationships
  
-TODO: Show relationship lines
+![Relationship Conext Menu](img/rantt_relationshipContextMenu.png)
+
+The result will be:
+
+![Relationship Lines](img/rantt_relationshipLines.png)
+
+**NOTE:**
+
+> In order to make the relationship lines disappear simply double click anywhere on the Gantt chart.
  
  
