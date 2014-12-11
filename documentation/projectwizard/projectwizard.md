@@ -13,8 +13,8 @@ navigation-bar:
       Title: General Information
     - Reference: operation-dataset
       Title: Operation Dataset
-    - Reference: calendar-information
-      Title: Calendar Information
+    - Reference: calendar-period-dataset
+      Title: Calendar Period Dataset
     - Reference: operation-relationships-information
       Title: Operation Relationships Information
     - Reference: viewing-operations
@@ -24,7 +24,6 @@ navigation-bar:
     - Reference: summary
       Title: Summary
 ---
-
 
 Introduction
 ============
@@ -105,8 +104,11 @@ The inputs required for this screen include:
         
 		Relative time is generally used for simulation data that starts from time "0".
         ![](images/RelativeDates.png)
-1.  File: The location and name of the operation file. If a database source is selected you will be prompted for a connection string and database table name:
+1.  File: The location and name of the operation file. 
+
+	If a database source is selected you will be prompted for a connection string and database table name:
     ![](images/DbOptions.png)
+	
     The "Table Name" can either be a physical database table or a view.
 1.  Default Attribute: Select the attribute that is the most significant for you.
 1.  Field Mappings: The wizard will try and automatically match the column or fields names to the required attributes. If it is unsuccessful you will have to map the attributes manually.
@@ -118,60 +120,55 @@ The wizard will validate the data source. If successful you will be able to proc
 
 If the validation fails the wizard will prompt you to fix the relevant input fields.
 
-Calendar Information
+Calendar Period Dataset
 --------------------
 
-Calendar information is optional, therefore in order to include such information please tick the "Include calendar periods" option.
+Calendar information is optional.
 
-![](images/CalendarInformation.png)
+![Calendar Period](images/wizard_CalendarPeriod.png)
 
-There is an option at the bottom of the screen to include another dataset. Please tick this option in order to create multiple datasets.
-
-The next screen will prompt for the optional "Operation Relationships" file.
-
- 
 
 Operation Relationships Information
 -----------------------------------
 
-Operation relationship information is optional, therefore in order to include such information please tick the "Include operation relationships" option.
+Operation relationship information is optional.
 
 You can define the file name and other details as shown below.
 
-![](images/or.png)
+![Operation Relationship](images/wizard_OperationRelationship.png)
 
- 
+There is an option in the bottom right corner of the screen to include another dataset. 
+Please tick this option in order to create multiple datasets.
 
-There is an option at the bottom of the screen to include another dataset. Please tick this option in order to create multiple datasets.
+If you select this option you will be able to choose another operation, calendar period or relationship dataset.
 
+Once you have finished defining all your datasets click on the "Next" button finalise some settings.
  
 
 Viewing Operations
 ------------------
 
- 
-
 The default view for the operations like, "all the operations" or a range based on dates can be set in the next screen.
 
-![](images/view.png)
+![](images/wizard_OpenProjectBehaviour.png)
 
- 
 
 Refresh Data
 ------------
 
 The timer for refreshing the data can be set in the next screen. You need to check the "Enable Timer" check box to get this to effect.
 
-![](images/timer.png)
+![](images/wizard_AutoUpdate.png.png)
 
  
-
 Summary
 -------
+
 This screen will provide a summary of the project name as well as the datasets that have been defined.
 
-![](images/ProjectSummary.png)
-
+![](images/wizard_Summary.png)
  
+You will only be able to save the project if all the required fields have been filled in properly and the data was successfully validated.
 
-You will only be able to save the project if all the required fields have been filled in and the data was successfully validated.
+If there are validation issues, warning messages will be displayed at the top to inform you on how to fix the issue.
+Use the "Back" button to navigate to the page that has an issue.
