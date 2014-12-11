@@ -70,12 +70,12 @@ The first screen is the general information.
 
 This screen contains the following fields:
 
-#. Name: The project name
-#. Culture: Select your countries culture
-#. First day of the week: Select the first day of the week
-#. Default Time Format: Either 12 Hrs or 24 Hrs format
-#. Start Date - Optional
-#. End Date - Optional
+1. Name: The project name
+1. Culture: Select your countries culture
+1. First day of the week: Select the first day of the week
+1. Default Time Format: Either 12 Hrs or 24 Hrs format
+1. Start Date - Optional
+1. End Date - Optional
     
 **Note:**
 
