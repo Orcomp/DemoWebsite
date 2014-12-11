@@ -158,11 +158,11 @@ Refresh Data
 
 The timer for refreshing the data can be set in the next screen. You need to check the "Enable Timer" check box to get this to effect.
 
-![](images/wizard_AutoUpdate.png.png)
+![Auto Update](images/wizard_AutoUpdate.png)
 
  
 Summary
--------
+---------
 
 This screen will provide a summary of the project name as well as the datasets that have been defined.
 
@@ -170,5 +170,6 @@ This screen will provide a summary of the project name as well as the datasets t
  
 You will only be able to save the project if all the required fields have been filled in properly and the data was successfully validated.
 
-If there are validation issues, warning messages will be displayed at the top to inform you on how to fix the issue.
-Use the "Back" button to navigate to the page that has an issue.
+If there are validation issues, warning messages will be displayed at the top of the screen to inform you about the problem and how to fix it.
+Use the "Back" button to navigate to the page that has issues. Once they are fixed click on the "Next" button to get back to the summary page.
+If there are no longer any issues you will be able to save the project.
