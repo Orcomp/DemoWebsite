@@ -101,9 +101,8 @@ textarea {
 blockquote {
     padding: 5px 0 5px 25px;
     margin: 0 0 20px 20px;
-    color: #AFAFAF;
     font-size: 12px;
-    text-transform: uppercase;
+    background-color: #FAFAFA
 }
 
 ::selection {
