@@ -15,8 +15,8 @@ navigation-bar:
       Title: Operation Dataset
     - Reference: calendar-period-dataset
       Title: Calendar Period Dataset
-    - Reference: operation-relationships-information
-      Title: Operation Relationships Information
+    - Reference: relationships-dataset
+      Title: Relationship Dataset
     - Reference: viewing-operations
       Title: Viewing Operations
     - Reference: refresh-data
@@ -121,15 +121,15 @@ The wizard will validate the data source. If successful you will be able to proc
 If the validation fails the wizard will prompt you to fix the relevant input fields.
 
 Calendar Period Dataset
---------------------
+-------------------------
 
 Calendar information is optional.
 
 ![Calendar Period](images/wizard_CalendarPeriod.png)
 
 
-Operation Relationships Information
------------------------------------
+Relationship Dataset
+---------------------
 
 Operation relationship information is optional.
 
@@ -160,13 +160,14 @@ The timer for refreshing the data can be set in the next screen. You need to che
 
 ![Auto Update](images/wizard_AutoUpdate.png)
 
- 
+
 Summary
 ---------
 
 This screen will provide a summary of the project name as well as the datasets that have been defined.
 
-![](images/wizard_Summary.png)
+![Summary](images/wizard_Summary.png)
+
  
 You will only be able to save the project if all the required fields have been filled in properly and the data was successfully validated.
 
