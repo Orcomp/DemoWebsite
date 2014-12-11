@@ -39,7 +39,7 @@ The Rantt Project Creator is a small utility wizard that will help you set up a 
 
 You can create a new project from the file menu:
 
-![Create Project](images/createProject.png)
+![Create Project](images/CreateProject.png)
 
 Project File Structure
 ======================
@@ -59,14 +59,14 @@ These data sources can either be a csv file, an Excel spreadsheet or a database 
 A project can contain multiple datasets, which makes it easier to compare data.
 
 Creating A Project
-================================
-
-The first screen you will see when you start the wizard is the General Information screen.
+==================
 
 General Information
 -------------------
 
-![](images/GeneralInformation.png)
+The first screen is the general information.
+
+![General Information](images/wizard_GeneralInformation.png)
 
 This screen contains the following fields:
 
@@ -76,10 +76,10 @@ This screen contains the following fields:
 4.  Start Date - Optional
 5.  End Date - Optional
     
-
+**Note**
 > **Large database tables**
 > 
-> The Start and End dates are generally used to filter the data coming from large database tables. Only the data contained in within the start and end dates will be retreived.
+> The Start and End dates are generally used to filter the data coming from large database tables. Only the data contained within this date range will be retrieved.
 
 
 Operation Dataset
