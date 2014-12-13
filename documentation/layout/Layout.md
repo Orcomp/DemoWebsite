@@ -4,5 +4,4 @@ title: Layout
 permalink: /documentation/layout/
 ---
 
-
-![Layout](img/Layout.png)
+![Layout](img/Layout1.png)
