@@ -17,10 +17,10 @@ navigation-bar:
       Title: Calendar Period Dataset
     - Reference: relationships-dataset
       Title: Relationship Dataset
-    - Reference: viewing-operations
-      Title: Viewing Operations
-    - Reference: refresh-data
-      Title: Refresh Data
+    - Reference: view-window
+      Title: View Window
+    - Reference: auto-updates
+      Title: Auto Updates
     - Reference: summary
       Title: Summary
 ---
@@ -146,21 +146,34 @@ Please tick this option in order to create multiple datasets.
 
 If you select this option you will be able to choose another operation, calendar period or relationship dataset.
 
-Once you have finished defining all your datasets click on the "Next" button finalise some settings.
+Once you have finished defining all your datasets click on the "Next" button.
  
 
-Viewing Operations
+View Window
 ------------------
 
-The default view for the operations like, "all the operations" or a range based on dates can be set in the next screen.
+You can select the size of the view window when starting Rantt.
+
+The options are:
+
+- View all operations: The view window will be set in order to display all operations
+- Predefined date Range: Open Rantt to focus a date range of your choosing
+- Current day: The view window will start from the start time defined for today and will have a predefined duration.
+
+Rantt will always open the project with the specified view window, however you can change the view window manually by zooming and panning.
 
 ![](images/wizard_OpenProjectBehaviour.png)
 
 
-Refresh Data
+Auto Updates
 ------------
 
-The timer for refreshing the data can be set in the next screen. You need to check the "Enable Timer" check box to get this to effect.
+Rantt can be configured to refresh your data at set intervals of time.
+Click on "Enable Timer" and then choose how often you want your data to be refreshed.
+
+**Note:**
+
+> This features is uesful if you want to see what is happening on a factory shop floor in real time.
 
 ![Auto Update](images/wizard_AutoUpdate.png)
 
