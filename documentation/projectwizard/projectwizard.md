@@ -34,7 +34,7 @@ The Rantt Project Creator is a small utility wizard that will help you set up a 
 
 **Note:**
 
-> A .rprj file is simply an xml file which can be constructed manually, however the wizard provides a simple user interface to facilitate this task.
+> A **.rprj** file is simply an xml file which can be constructed manually, however the wizard provides a simple user interface to facilitate this task.
 
 You can create a new project from the file menu:
 
@@ -55,7 +55,11 @@ A dataset is made up of:
 
 These data sources can either be a csv file, an Excel spreadsheet or a database table (or view).
 
-A project can contain multiple datasets, which makes it easier to compare data.
+**Note:**
+
+> It is possible to have an operation csv file, a calendar database table and a relationship Excel spreadsheet all in the one dataset.
+
+A project can contain multiple datasets, which makes it easier to compare data, as multiple datasets can be displayed in Rantt at the same time.
 
 Creating A Project
 ==================
@@ -83,7 +87,7 @@ This screen contains the following fields:
 > The Start and End dates are generally used to filter the data coming from large database tables. Only the data contained within this date range will be retrieved.
 
 The disable validation checkbox at the bottom right corner of the screen should be left unticked.
-Only enable this option if the wizard does not allow you save your project because of validation issues.
+Only enable this option if the wizard does not allow you save your project because of validation issues. i.e. by disabling validation will allow you to save your project despite validation issues.
 
 
 Operation Dataset
