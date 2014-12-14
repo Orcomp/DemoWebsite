@@ -6,7 +6,7 @@ permalink: /documentation/layout/
 
 Rantt is divided into several sections:
 
-- Main Toolbar:
+- Main Toolbar
 	- File Menu
 	- Tools
 	- Settings
@@ -16,3 +16,13 @@ Rantt is divided into several sections:
 - Calendar Control
 
 ![Layout](img/Layout1.png)
+
+Gantt Chart:
+ - DateTime Axis
+ - Resource Axis
+ - Operation
+ - Calendar period
+ - Highlight column
+ - Pinnable Tooltips
+ 
+ ![Layout](img/Layout2.png)
