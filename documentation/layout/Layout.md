@@ -4,7 +4,10 @@ title: Layout
 permalink: /documentation/layout/
 ---
 
-Rantt is divided into several sections:
+Main Application
+================
+
+Rantt is divided into several components:
 
 - Main Toolbar
 	- File Menu
@@ -17,7 +20,11 @@ Rantt is divided into several sections:
 
 ![Layout](img/Layout1.png)
 
-Gantt Chart:
+Gantt Chart
+============
+
+The Gantt chart is also divided into several components:
+
  - DateTime Axis
  - Resource Axis
  - Operation
