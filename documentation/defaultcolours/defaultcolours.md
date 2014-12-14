@@ -35,8 +35,6 @@ The Colors.csv file must have 3 columns:
 -   AttributeValue
 -   Color
 
-Example.
-
 ![](images/colorsCsvFile.png)
 
 When Rantt loads a project it will automatically check for the existence of this **Colors.csv** file. If there is one it will use the colors supplied for the attribute name/values.

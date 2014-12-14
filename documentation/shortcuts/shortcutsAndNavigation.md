@@ -1,9 +1,23 @@
+---
+layout: page-with-navigation
+title: Shortcuts and Navigation
+permalink: /documentation/shortcuts/
+navigation-bar:
+    - Reference: shortcuts
+      Title: Shortcuts
+    - Reference: navigation
+      Title: Navigation
+---
+
+Shortcusts
+============
 
 
 
-Shorcut and Navigation
 
+Navigation
+==========
 
-- List all the shortcuts
+Clicking on rectangles on the Date Time Axis will allow you to zoom in or out of the specified time range.
 
-- Talk about navigating the date time axis
+TODO: Show examples.
