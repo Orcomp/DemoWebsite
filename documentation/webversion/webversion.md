@@ -5,12 +5,15 @@ permalink: /documentation/webversion/
 
 ---
 
-
 This page will contain documentation on how to install and use the stand alone web (Silverlight 5) application.
-The web application shares a lot of the same features as the desktop version, except:
 
-- Shortcut keys
+The web application shares about 90% of the same features as the desktop version.
 
+The main exception are the **shortcut keys** which do not work in a web browser.
+
+The purpose of the web version is more to publish results for multiple people to view.
+
+Different views can be setup to display different information for different groups of people. (i.e. Managers, Sales force, Customers etc...)
 
 Prerequisites
 ==============
@@ -28,7 +31,7 @@ If IIS is configured properly you should be able to see a page with some links o
 
 ![Projects](img/webRantt0.png)
 
-IIS can sometimes be tricky to setup so if you have a problem displaying the page, please send us an email.
+IIS can sometimes be tricky to setup so if you have a problem displaying the page, please check the troubleshooting page. If you cannot find help there, please contact us directly on the support page.
 
 If you click on one of the links you should see a page like the picture below:
 
@@ -39,20 +42,20 @@ If you click on one of the links you should see a page like the picture below:
 Notes
 ------
 
-The system expects new project folders to be located in the "C:\????" sub-directory.
+The system expects the project folders to be located in the "C:\????" sub-directory.
 
 The name of the project folder must be the same as name of the project file. (e.g. C:\SMS Software\RanttWebSetup\App_Data\ABC\ABC.rprj)
 
 The project is then accessible from http://localhost/sms/Rantt/ABC
 
-To find out how to create a project file please visit the Rantt Project Creator page.
+The desktop version of Rantt needs to be used to create projects. Click on the [ProjectWizard](http://www.resourcegantt.com/documentation/projectwizard/) page to find out more information on creating a project. 
 
 
 Workspaces
 ==========
 
-Workspaces for the Desktop and Web version can be shared with each other.
+Workspaces created with the desktop version can be shared with the Web version (and vice versa).
 
-In fact you can force the webRantt to open a workspace directly by appending the workspace name to the URL
+The web version can open a workspace directly by appending the workspace name to the URL
 
 TODO: Show example
