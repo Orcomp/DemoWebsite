@@ -4,7 +4,7 @@ title: Preactor Views
 permalink: /documentation/preactorviews/
 ---
 
-Rantt can be used to view Preactor data.
+Rantt can be used to view [Preactor](http://preactor.com/Home.aspx) data.
 
 In order to display Preactor data in Rantt you will need to create some views.
 
@@ -13,11 +13,17 @@ Please download the following [zip file](https://drive.google.com/file/d/0B5SM6i
 Instructions
 =============
 
-The file contains two scripts.
+The zip file contains two scripts:
+	- FunctionsAndProcedures.sql 
+	- CreateViews.sql
 
-These scripts will create two views, one for **operations** and the other for **calendar periods**.
+These scripts will create two views, one for **operations** and the other for **calendar periods**, which can then be imported into Rantt easily.
 
-Run FunctionsAndProcedures.sql first, then the CreateViews.sql.
+Step 1: Run FunctionsAndProcedures.sql
+Step 2: CreateViews.sql
+Step 3: Create a new Rantt project and include the newly created views
 
-Feel free to edit the views in order to add more fields as appropriate. (The operations view is very basic, so it will require more fields.)
+**Note:**
+
+> The operation view only contains a few fields. You can add more fields to the operation view by editing the FunctionsAndProcedures.sql script. (Advanced SQL knowledge is required.)
  
