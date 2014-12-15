@@ -18,12 +18,22 @@ Different views can be setup to display different information for different grou
 Prerequisites
 ==============
 
-- IIS
-- .NET 4.5
+-	Windows Server 2008 R2 or higher
+- IIS 7 or higher
+-	.NET Framework 4.5 or higher (see http://www.microsoft.com/en-us/download/details.aspx?id=30653)
 
-Installation
-=============
 
+Installation Steps
+====================
+
+1.	Install the website using the installer
+2.	Run Internet Information Services (IIS) Manager
+3.	Right click on Sites and click "Add Web Site..."
+	![Add Website](img/AddWebsite.png)
+4. Fill in the right information as shown in the image below:
+	![Add Website Settings](img/AddWebsiteSettings.png)
+	
+	
 The installation package will create a new folder in "C:\SMS Software\RanttWebSetup" and will automatically register itself with IIS.
 Once the installation is complete, you can test the installation was successful by pointing your browser to the following address:  http://localhost/???
 
