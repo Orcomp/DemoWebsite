@@ -29,8 +29,11 @@ Installation Steps
 1.	Install the website using the installer
 2.	Run Internet Information Services (IIS) Manager
 3.	Right click on Sites and click "Add Web Site..."
+
 	![Add Website](img/AddWebsite.png)
+	
 4. Fill in the right information as shown in the image below:
+
 	![Add Website Settings](img/AddWebsiteSettings.png)
 	
 	
