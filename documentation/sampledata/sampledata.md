@@ -17,8 +17,6 @@ navigation-bar:
       Title: TransArcticRail
     - Reference: multiple-datasets
       Title: Multiple Datasets
-    - Reference: actualplanned
-      Title: ActualPlanned
 ---
 
 Introduction
@@ -74,14 +72,16 @@ Finoflex
 Globex
 ======
 
-This sample project has the operations and operation relationships data. The child and parent relationships (as dotted lines) can be seen as shown in the screen shot.
+- Display operations and their relationships
 
 <img src="images/globex.png" alt="Drawing" style="width: 720px;"/> 
 
 TransArcticRail
 ===============
 
-This project shows the time table of trains in the TransArctic segment. This project requires only the operations file.
+- Simulation demo
+- Relative start and end times
+- Large dataset with over 30 000 operations
 
 <img src="images/ta.png" alt="Drawing" style="width: 720px;"/> 
 
