@@ -13,16 +13,20 @@ navigation-bar:
       Title: Finoflex
     - Reference: globex
       Title: Globex
-    - Reference: transarcticrail
-      Title: TransArcticRail
     - Reference: multiple-datasets
       Title: Multiple Datasets
+    - Reference: safety-stocks
+      Title: Safety Stocks
+    - Reference: transarcticrail
+      Title: TransArcticRail
 ---
 
 Introduction
 ============
 
-Rantt comes with some sample projects, which can be found in `**C:\Program Files (x86)\Wild Gums\Rantt for Desktop\sampledata**`.
+Rantt comes with some sample projects, which can be found in:
+
+ `**C:\Program Files (x86)\Wild Gums\Rantt for Desktop\sampledata**`.
 
 The sample projects are:
 
@@ -78,6 +82,30 @@ Globex
 ![Globex](images/Globex.png)
 
 
+Multiple Datasets
+=================
+
+- Displays 3 datasets side by side (Rantt can display up to 10 datasets side by side)
+- Datasets can be hidden if required
+
+![Multi Dataset](images/MultiDataset1.png)
+
+![Multi Dataset Options](images/MultiDataset2.png)
+
+
+Safety Stocks
+==============
+
+- Display safety stock levels
+- Display forecast inventory from ERP system
+- Rantt can be used as an exception reporting system
+
+![Safety Stocks](images/SafetyStock1.png)
+
+- Hide operations and resources that are all green
+
+![Safety Stocks Filtered](images/SafetyStock2.png)
+
 TransArcticRail
 ===============
 
@@ -88,13 +116,5 @@ TransArcticRail
 ![TransArctic](images/TransArctic.png)
 
 
-Multiple Datasets
-=================
 
-- Displays 3 datasets side by side (Rantt can display up to 10 datasets side by side)
-- Datasets can be hidden if required
-
-![Multi Dataset](images/MultiDataset1.png)
-
-![Multi Dataset Options](images/MultiDataset2.png)
 
