@@ -72,18 +72,20 @@ Finoflex
 Globex
 ======
 
+- Port demo
 - Display operations and their relationships
 
-<img src="images/globex.png" alt="Drawing" style="width: 720px;"/> 
+![Globex](images/Globex.png)
+
 
 TransArcticRail
 ===============
 
-- Simulation demo
+- Rail newtork simulation demo
 - Relative start and end times
 - Large dataset with over 30 000 operations
 
-<img src="images/ta.png" alt="Drawing" style="width: 720px;"/> 
+![TransArctic](images/TransArctic.png)
 
 
 Multiple Datasets
