@@ -5,10 +5,12 @@ permalink: /documentation/sampledata/
 navigation-bar:
     - Reference: introduction
       Title: Introduction
-    - Reference: finoflex
-      Title: Finoflex
+    - Reference: actualplanned
+      Title: ActualPlanned
     - Reference: elsinore
       Title: Elsinore
+    - Reference: finoflex
+      Title: Finoflex
     - Reference: globex
       Title: Globex
     - Reference: transarcticrail
@@ -22,35 +24,53 @@ navigation-bar:
 Introduction
 ============
 
-The following page will give you a short introduction of the sample projects that come with Rantt. 
+Rantt comes with some sample projects, which can be found in `**C:\Program Files (x86)\Wild Gums\Rantt for Desktop\sampledata**`.
 
-You can find these samples in the following folder:
+The sample projects are:
 
-    C:\Program Files\SimulationModelling\Rantt\SampleData
+- ActualPlanned
+- Elsinore
+- Finoflex
+- Globex
+- LargeScheduleHorizon
+- MultiDataset
+- Port
+- TransArcticRail
+- xlsElsinore: Same project as Elsinore but the data is in an Excel spreadsheet
+- xlsFinoflex: Same project as Finoflex but the data is in an Excel spreadsheet
 
-Finoflex
-========
+ActualPlanned
+=============
 
-This sample project has been built with sample data for finoflex. You can the operations lined against the resource along with calendar periods. The visible are zero and 100 % efficiency calender periods. 
+- Displays two datasets side by side
+- Compare various scheduled
+- Compare schedule with actual shop floor perfromance
 
- 
-<img src="images/finoflex.png" alt="Drawing" style="width: 720px;"/> 
+![Actual Planned](images/ActualPlanned.png)
 
 Elsinore
 ========
 
- 
+- Beverage demo
+- Operations and calendar periods
 
-This sample project has both operations and calendar data. The calendar perios that are visible are off-shift and at-risk. The same can be seen in the calendar legend control as well.
+![Elsinore](images/Elsinore.png)
 
-<img src="images/elsinore.png" alt="Drawing" style="width: 720px;"/> 
 
- 
+Finoflex
+========
+
+- Pharmaceutical demo
+- Uses extensive calendar periods
+- If a SetupStartTime or TearDownTime column are specified, Rantt will draw the setup and tear down periods as small black rectangles
+- Resources with multiple concurrent operations
+
+![Finoflex](images/Finoflex.png)
+
 
 Globex
 ======
 
- 
 
 This sample project has the operations and operation relationships data. The child and parent relationships (as dotted lines) can be seen as shown in the screen shot.
 
