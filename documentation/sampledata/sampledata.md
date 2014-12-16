@@ -92,7 +92,7 @@ Multiple Datasets
 - Displays 3 datasets side by side (Rantt can display up to 10 datasets side by side)
 - Datasets can be hidden if required
 
-![Multi Dataset](images/MultiDatasets1.png)
+![Multi Dataset](images/MultiDataset1.png)
 
-![Multi Dataset Options](images/MultiDatasets2.png)
+![Multi Dataset Options](images/MultiDataset2.png)
 
