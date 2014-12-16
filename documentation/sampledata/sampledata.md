@@ -39,6 +39,7 @@ The sample projects are:
 - xlsElsinore: Same project as Elsinore but the data is in an Excel spreadsheet
 - xlsFinoflex: Same project as Finoflex but the data is in an Excel spreadsheet
 
+
 ActualPlanned
 =============
 
@@ -48,11 +49,13 @@ ActualPlanned
 
 ![Actual Planned](images/ActualPlanned.png)
 
+
 Elsinore
 ========
 
 - Beverage demo
 - Operations and calendar periods
+- Multi line labels
 
 ![Elsinore](images/Elsinore.png)
 
@@ -71,7 +74,6 @@ Finoflex
 Globex
 ======
 
-
 This sample project has the operations and operation relationships data. The child and parent relationships (as dotted lines) can be seen as shown in the screen shot.
 
 <img src="images/globex.png" alt="Drawing" style="width: 720px;"/> 
@@ -79,24 +81,18 @@ This sample project has the operations and operation relationships data. The chi
 TransArcticRail
 ===============
 
- 
-
 This project shows the time table of trains in the TransArctic segment. This project requires only the operations file.
 
 <img src="images/ta.png" alt="Drawing" style="width: 720px;"/> 
 
- 
 
 Multiple Datasets
 =================
 
- 
+- Displays 3 datasets side by side (Rantt can display up to 10 datasets side by side)
+- Datasets can be hidden if required
 
-This project has three operations file and has set up as three different datasets. When creating the project, you should select "define another dataset" after selecting the first operations file.
+![Multi Dataset](images/MultiDatasets1.png)
 
-The below screen shot shows three different data sets against same resources.
-
-<img src="images/md.png" alt="Drawing" style="width: 720px;"/> 
-
- 
+![Multi Dataset Options](images/MultiDatasets2.png)
 
