@@ -102,7 +102,7 @@ Safety Stocks
 
 ![Safety Stocks](images/SafetyStock1.png)
 
-- Hide operations and resources that are all green
+- Hide operations and resources that are all green (To allow you to focus on what matters)
 
 ![Safety Stocks Filtered](images/SafetyStock2.png)
 
