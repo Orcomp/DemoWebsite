@@ -26,7 +26,7 @@ Introduction
 
 Rantt comes with some sample projects, which can be found in:
 
- `**C:\Program Files (x86)\Wild Gums\Rantt for Desktop\sampledata**`.
+ `C:\Program Files (x86)\Wild Gums\Rantt for Desktop\sampledata`.
 
 The sample projects are:
 
@@ -34,9 +34,8 @@ The sample projects are:
 - Elsinore
 - Finoflex
 - Globex
-- LargeScheduleHorizon
 - MultiDataset
-- Port
+- SafetyStock
 - TransArcticRail
 - xlsElsinore: Same project as Elsinore but the data is in an Excel spreadsheet
 - xlsFinoflex: Same project as Finoflex but the data is in an Excel spreadsheet
