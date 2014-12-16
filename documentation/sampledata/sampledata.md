@@ -5,88 +5,115 @@ permalink: /documentation/sampledata/
 navigation-bar:
     - Reference: introduction
       Title: Introduction
-    - Reference: finoflex
-      Title: Finoflex
-    - Reference: elsinore
-      Title: Elsinore
-    - Reference: globex
-      Title: Globex
-    - Reference: transarcticrail
-      Title: TransArcticRail
-    - Reference: multiple-datasets
-      Title: Multiple Datasets
     - Reference: actualplanned
       Title: ActualPlanned
+    - Reference: elsinore
+      Title: Elsinore
+    - Reference: finoflex
+      Title: Finoflex
+    - Reference: globex
+      Title: Globex
+    - Reference: multiple-datasets
+      Title: Multiple Datasets
+    - Reference: safety-stocks
+      Title: Safety Stocks
+    - Reference: transarcticrail
+      Title: TransArcticRail
 ---
 
 Introduction
 ============
 
-The following page will give you a short introduction of the sample projects that come with Rantt. 
+Rantt comes with some sample projects, which can be found in:
 
-You can find these samples in the following folder:
+ `C:\Program Files (x86)\Wild Gums\Rantt for Desktop\sampledata`.
 
-    C:\Program Files\SimulationModelling\Rantt\SampleData
+The sample projects are:
 
-Finoflex
-========
+- ActualPlanned
+- Elsinore
+- Finoflex
+- Globex
+- MultiDataset
+- SafetyStock
+- TransArcticRail
+- xlsElsinore: Same project as Elsinore but the data is in an Excel spreadsheet
+- xlsFinoflex: Same project as Finoflex but the data is in an Excel spreadsheet
 
-This sample project has been built with sample data for finoflex. You can the operations lined against the resource along with calendar periods. The visible are zero and 100 % efficiency calender periods. 
-
- 
-<img src="images/finoflex.png" alt="Drawing" style="width: 720px;"/> 
-
-Elsinore
-========
-
- 
-
-This sample project has both operations and calendar data. The calendar perios that are visible are off-shift and at-risk. The same can be seen in the calendar legend control as well.
-
-<img src="images/elsinore.png" alt="Drawing" style="width: 720px;"/> 
-
- 
-
-Globex
-======
-
- 
-
-This sample project has the operations and operation relationships data. The child and parent relationships (as dotted lines) can be seen as shown in the screen shot.
-
-<img src="images/globex.png" alt="Drawing" style="width: 720px;"/> 
-
-TransArcticRail
-===============
-
- 
-
-This project shows the time table of trains in the TransArctic segment. This project requires only the operations file.
-
-<img src="images/ta.png" alt="Drawing" style="width: 720px;"/> 
-
- 
-
-Multiple Datasets
-=================
-
- 
-
-This project has three operations file and has set up as three different datasets. When creating the project, you should select "define another dataset" after selecting the first operations file.
-
-The below screen shot shows three different data sets against same resources.
-
-<img src="images/md.png" alt="Drawing" style="width: 720px;"/> 
-
- 
 
 ActualPlanned
 =============
 
- 
+- Displays two datasets side by side (i.e there are two separate operation files)
+- Compare various scheduled
+- Compare schedule with actual shop floor perfromance
 
-This project is a practical example for multiple datasets. You can view actual against planned. There are two files giving details of actual operations and planned operations.
+![Actual Planned](images/ActualPlanned.png)
 
- 
 
-<img src="images/app.png" alt="Drawing" style="width: 720px;"/> 
+Elsinore
+========
+
+- Beverage demo
+- Operations and calendar periods
+- Multi line labels
+
+![Elsinore](images/Elsinore.png)
+
+
+Finoflex
+========
+
+- Pharmaceutical demo
+- Uses extensive calendar periods
+- If a SetupStartTime or TearDownTime column are specified, Rantt will draw the setup and tear down periods as small black rectangles
+- Resources with multiple concurrent operations
+
+![Finoflex](images/Finoflex.png)
+
+
+Globex
+======
+
+- Port demo
+- Display operations and their relationships
+
+![Globex](images/Globex.png)
+
+
+Multiple Datasets
+=================
+
+- Displays 3 datasets side by side (Rantt can display up to 10 datasets side by side)
+- Datasets can be hidden if required
+
+![Multi Dataset](images/MultiDataset1.png)
+
+![Multi Dataset Options](images/MultiDataset2.png)
+
+
+Safety Stocks
+==============
+
+- Display safety stock levels
+- Display forecast inventory from ERP system
+- Rantt can be used as an exception reporting system
+
+![Safety Stocks](images/SafetyStock1.png)
+
+- Hide operations and resources that are all green (To allow you to focus on what matters)
+
+![Safety Stocks Filtered](images/SafetyStock2.png)
+
+TransArcticRail
+===============
+
+- Rail newtork simulation demo
+- Relative start and end times
+- Large dataset with over 30 000 operations
+
+![TransArctic](images/TransArctic.png)
+
+
+
+

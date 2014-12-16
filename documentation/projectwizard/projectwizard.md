@@ -17,10 +17,10 @@ navigation-bar:
       Title: Calendar Period Dataset
     - Reference: relationships-dataset
       Title: Relationship Dataset
-    - Reference: viewing-operations
-      Title: Viewing Operations
-    - Reference: refresh-data
-      Title: Refresh Data
+    - Reference: view-window
+      Title: View Window
+    - Reference: auto-updates
+      Title: Auto Updates
     - Reference: summary
       Title: Summary
 ---
@@ -34,7 +34,7 @@ The Rantt Project Creator is a small utility wizard that will help you set up a 
 
 **Note:**
 
-> A .rprj file is simply an xml file which can be constructed manually, however the wizard provides a simple user interface to facilitate this task.
+> A **.rprj** file is simply an xml file which can be constructed manually, however the wizard provides a simple user interface to facilitate this task.
 
 You can create a new project from the file menu:
 
@@ -55,7 +55,11 @@ A dataset is made up of:
 
 These data sources can either be a csv file, an Excel spreadsheet or a database table (or view).
 
-A project can contain multiple datasets, which makes it easier to compare data.
+**Note:**
+
+> It is possible to have an operation csv file, a calendar database table and a relationship Excel spreadsheet all in the one dataset.
+
+A project can contain multiple datasets, which makes it easier to compare data, as multiple datasets can be displayed in Rantt at the same time.
 
 Creating A Project
 ==================
@@ -83,7 +87,7 @@ This screen contains the following fields:
 > The Start and End dates are generally used to filter the data coming from large database tables. Only the data contained within this date range will be retrieved.
 
 The disable validation checkbox at the bottom right corner of the screen should be left unticked.
-Only enable this option if the wizard does not allow you save your project because of validation issues.
+Only enable this option if the wizard does not allow you save your project because of validation issues. i.e. by disabling validation will allow you to save your project despite validation issues.
 
 
 Operation Dataset
@@ -142,21 +146,34 @@ Please tick this option in order to create multiple datasets.
 
 If you select this option you will be able to choose another operation, calendar period or relationship dataset.
 
-Once you have finished defining all your datasets click on the "Next" button finalise some settings.
+Once you have finished defining all your datasets click on the "Next" button.
  
 
-Viewing Operations
+View Window
 ------------------
 
-The default view for the operations like, "all the operations" or a range based on dates can be set in the next screen.
+You can select the size of the view window when starting Rantt.
+
+The options are:
+
+- View all operations: The view window will be set in order to display all operations
+- Predefined date Range: Open Rantt to focus a date range of your choosing
+- Current day: The view window will start from the start time defined for today and will have a predefined duration.
+
+Rantt will always open the project with the specified view window, however you can change the view window manually by zooming and panning.
 
 ![](images/wizard_OpenProjectBehaviour.png)
 
 
-Refresh Data
+Auto Updates
 ------------
 
-The timer for refreshing the data can be set in the next screen. You need to check the "Enable Timer" check box to get this to effect.
+Rantt can be configured to refresh your data at set intervals of time.
+Click on "Enable Timer" and then choose how often you want your data to be refreshed.
+
+**Note:**
+
+> This features is uesful if you want to see what is happening on a factory shop floor in real time.
 
 ![Auto Update](images/wizard_AutoUpdate.png)
 

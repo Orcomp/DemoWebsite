@@ -20,7 +20,8 @@ navigation-bar:
       Title: Attributes in Datarow
 ---
 
-# Workspace Settings
+Workspace Settings
+===================
 
 A workspace allows you to:
 
@@ -39,10 +40,15 @@ To create a new workspace:
 
 New settings can be added to an existing workspace by clicking on the save button at any time.
 
-NOTE: Please note all settings described on this page are optional.
+**Note:**
+
+> Please note all settings described on this page are optional.
 
 ![](WorkspaceSettings.png)
-## Resources Management
+
+
+Resources Management
+---------------------
 
 - Show or hide a resource from the Gantt chart by ticking or unticking the check boxes.
 - Change the position of a resource in the Gantt chart by double clicking on the position cell and changing the value.
@@ -50,7 +56,9 @@ NOTE: Please note all settings described on this page are optional.
 
 ![Rant Attributes Settings](WorkspaceResourceManagement.png)
 
-## Attribute Management
+
+Attribute Management
+--------------------
 
 - Change the type of an attribute. The various types are:
     - String
@@ -64,14 +72,18 @@ NOTE: Please note all settings described on this page are optional.
 
 ![Rant Attributes Management](WorkspaceAttributeManagement.png)
 
-## Attributes in Labels
+
+Attributes in Labels
+---------------------
 
 -  Show or hide attributes in Labels, by ticking or unticking the check boxes.
 -  Change the position of each attribute in the labels by double clicking on the position cell and changing the value.
 
 ![](WorkspaceAttributeLabelsManagement.png)
 
-## Attributes in Tooltips
+
+Attributes in Tooltips
+------------------------
 
 The Attributes in Tooltips panel allows user to:
 
@@ -81,7 +93,9 @@ The Attributes in Tooltips panel allows user to:
 
 ![Rant Attributes in Tooltips](WorkspaceAttributeTooltipsManagement.png)
 
-## Attributes in Details
+
+Attributes in Details
+-----------------------
 
 -  Show or hide details on the Property Details control, by ticking or unticking the check boxes.
 -  Change the position of each detail on the Property Details Control by double clicking on the position cell and changing the value.
@@ -89,7 +103,8 @@ The Attributes in Tooltips panel allows user to:
 ![Rant Attributes in Details](WorkspaceAttributeDetailsManagement.png)
 
 
-## Attributes in Datarow
+Attributes in Datarow
+----------------------
 
 -  Show or hide the attribute from the Data Row, by ticking or unticking the check boxes.
 -  Change the position of each datarow on Gantt Chart by double clicking on the position cell  and changing the value.
@@ -103,7 +118,8 @@ The various formats for a number like 12345.678 are:
 - Nearest integer: 12346
 - Scientific: 1.2E+04
 
-NOTE: In order for an attribute to be displayed in the DataRow, it needs to be of a numeric type, otherwise the value displayed will be 0.
+**Note:**
 
+> In order for an attribute to be displayed in the DataRow, it needs to be of a numeric type, otherwise the value displayed will be 0.
 
 ![Rant Attributes in Datarow](WorkspaceAttributeDatarowManagement.png) 
