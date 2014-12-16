@@ -42,7 +42,7 @@ The sample projects are:
 ActualPlanned
 =============
 
-- Displays two datasets side by side
+- Displays two datasets side by side (i.e there are two separate operation files)
 - Compare various scheduled
 - Compare schedule with actual shop floor perfromance
 
@@ -100,13 +100,3 @@ The below screen shot shows three different data sets against same resources.
 
  
 
-ActualPlanned
-=============
-
- 
-
-This project is a practical example for multiple datasets. You can view actual against planned. There are two files giving details of actual operations and planned operations.
-
- 
-
-<img src="images/app.png" alt="Drawing" style="width: 720px;"/> 
