@@ -4,4 +4,20 @@ title: Tooltips
 permalink: /documentation/tooltips/
 ---
 
-Tooltips
+Tooltips in Rantt are very powerful and customisable. The main highlights are:
+
+- Pinnable tootlips, so more than one tooltip can be displayed at the same time making it easy to compare values from different operations
+	![Tooltip](img/Tooltips.png)
+
+- The position of fields on the tooltips can be changed
+	![Tooltip Settings](img/TooltipSettings.png)
+
+- Fields can be grouped into categories
+	![Tooltip Categories](img/ExpandedTooltips.png)
+	
+- Categories can be expanded or collapsed so you can concentrate on the information that is important to you
+	![Tooltip Collapsed](img/CollapsedTooltips.png)
+	
+- Tooltips can be enabled or disabled
+	![Tooltip Button](img/TooltipButton.png)
+
