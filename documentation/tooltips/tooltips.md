@@ -11,13 +11,14 @@ Tooltips in Rantt are very powerful and customisable. The main highlights are:
 
 - The position of fields on the tooltips can be changed
 - You can choose which fields to include or exclude
+
 	![Tooltip Settings](img/TooltipSettings.png)
 
 - Fields can be grouped into categories
 	![Tooltip Categories](img/ExpandedTooltips.png)
 	
 	- Create as many categories as you like by editing the "Category" column in the "Attribute Management" grid.
-	Note, by default all fields belong to the "Misc" category if nothing is specified.
+	**Note:** by default all fields belong to the "Misc" category if nothing is specified.
 	
 - Categories can be expanded or collapsed so you can concentrate on the information that is important to you
 	![Tooltip Collapsed](img/CollapsedTooltips.png)
