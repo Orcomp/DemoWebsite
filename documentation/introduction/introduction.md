@@ -22,3 +22,4 @@ Product Highlights
 - Available as a desktop or web-browser application
 - Flexible data sources (can read csv or Excel files or database tables or views.)
 
+If you need a specific feature added to Rant please don't hesitate to [contact us](contact).
