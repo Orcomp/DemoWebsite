@@ -14,6 +14,7 @@ Tooltips in Rantt are very powerful and customisable. The main highlights are:
 
 - Fields can be grouped into categories
 	![Tooltip Categories](img/ExpandedTooltips.png)
+	- Create as many categories as you like by editing the "Category" column
 	
 - Categories can be expanded or collapsed so you can concentrate on the information that is important to you
 	![Tooltip Collapsed](img/CollapsedTooltips.png)
