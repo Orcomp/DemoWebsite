@@ -10,6 +10,7 @@ Tooltips in Rantt are very powerful and customisable. The main highlights are:
 	![Tooltip](img/Tooltips.png)
 	
 - Tooltips have a "grip header" which allows you to click on their header to move them around the screen
+- To hide a tooltip that has been "pinned" simply click on the pin icon in the top right corner
 - The position of fields on the tooltips can be changed
 - You can choose which fields to include or exclude
 
