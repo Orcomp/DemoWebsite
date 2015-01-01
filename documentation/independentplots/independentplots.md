@@ -52,5 +52,5 @@ Highlight Column
 
 In order to enable a highlight column, CTRL + click on any operation in the Gantt. To disable it, CTRL + click on the same operation.
 
-![Column Highlights](img/HighlightColumn.png)
+![Column Highlights](img/HighlightColumns.png)
 
