@@ -18,11 +18,11 @@ This feature is useful if you want to see how various plots are related to a sch
 Features
 --------
 
-- Display multiple plots in their own window
-- Display plots in the same chart or individual charts.
+- Display multiple plots in their own window (beneath the Gantt chart)
+- Display plots in the same chart or individual charts
 - Enable/Disable plots on the fly
 - Plot are fully synced with the Gantt chart navigation. (i.e. Zoom or pan the Gantt chart and the plots will adjust accordingly, and vice versa)
-- Highlight columns in the Gantt chart will also be displayed in the plot area, which makes it easy to see what overlaps with a given time window.
+- Highlight columns in the Gantt chart will also be displayed in the plot area, which makes it easy to see what overlaps with a given time window
 
 
 File Structure
@@ -44,7 +44,7 @@ An independent plot file must have:
 - At least two columns
 - First column always contains the x-axis values
 - First row always contains the plot legends (If a plot does not have a legend, leave the first cell blank and a legend will automatically be assigned to the column)
-- A column can have blank cells at the top and/or the bottom but not in the middle.
+- A column can have blank cells at the top and/or the bottom but not in the middle
 
 
 Highlight Column
