@@ -4,7 +4,7 @@ title: Independent Plots
 permalink: /documentation/independentplots/
 navigation-bar:
     - Reference: features
-      Title: features
+      Title: Features
     - Reference: file-structure
       Title: File Structure
       SubItems:
