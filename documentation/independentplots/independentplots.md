@@ -3,6 +3,15 @@ layout: page-with-navigation
 title: Independent Plots
 permalink: /documentation/independentplots/
 navigation-bar:
+	- Reference: features
+	  Title: features
+	- Reference: file-structure
+	  Title: File Structure
+	  SubItems:
+		- Reference: rules
+		  Title: Rules
+	- Reference: highlight-columns
+	  Title: Highlight Columns
 ---
 
 Rantt allows you to visualise plots that are totally independent from the gantt chart, but share the same date range.
@@ -16,7 +25,7 @@ This feature is useful if you want to see how various plots are related to a sch
 ![Plots](img/Plots.png)
 
 Features
---------
+=========
 
 - Display multiple plots in their own window (beneath the Gantt chart)
 - Display plots in the same chart or individual charts
@@ -47,7 +56,7 @@ An independent plot file must have:
 - A column can have blank cells at the top and/or the bottom but not in the middle
 
 
-Highlight Column
+Highlight Columns
 ==================
 
 In order to enable a highlight column, CTRL + click on any operation in the Gantt chart area. To disable it, CTRL + click on the same operation.
