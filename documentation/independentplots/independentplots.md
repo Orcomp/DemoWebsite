@@ -3,15 +3,15 @@ layout: page-with-navigation
 title: Independent Plots
 permalink: /documentation/independentplots/
 navigation-bar:
-	- Reference: features
-	  Title: features
-	- Reference: file-structure
-	  Title: File Structure
-	  SubItems:
-		- Reference: rules
-		  Title: Rules
-	- Reference: highlight-columns
-	  Title: Highlight Columns
+    - Reference: features
+      Title: features
+    - Reference: file-structure
+      Title: File Structure
+      SubItems:
+        - Reference: rules
+          Title: Rules
+    - Reference: highlight-columns
+      Title: Highlight Columns
 ---
 
 Rantt allows you to visualise plots that are totally independent from the gantt chart, but share the same date range.
