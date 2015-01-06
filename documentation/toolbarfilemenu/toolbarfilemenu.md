@@ -9,4 +9,4 @@ navigation-bar:
 ---
 
 
-File Menu...
+![Toolbar File Menu](img/ToolbarFileMenu.png)
