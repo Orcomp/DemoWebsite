@@ -6,7 +6,7 @@ permalink: /documentation/preactorviews/
 
 Rantt can be used to view [Preactor](http://preactor.com/Home.aspx) data.
 
-In order to display Preactor data in Rantt you will need to create some views.
+In order to display Preactor data in Rantt you will need to create some database views.
 
 Please download the following [zip file](https://drive.google.com/file/d/0B5SM6iAQ6u64RjZSZmF4VTc3bkU/view?usp=sharing).
 
