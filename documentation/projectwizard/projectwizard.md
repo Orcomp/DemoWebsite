@@ -119,9 +119,9 @@ The inputs required for this screen include:
     The "Table Name" can either be a physical database table or a view.
 1.  Default Attribute: Select the attribute that is the most significant for you.
 1.  Field Mappings: The wizard will try and automatically match the column or fields names to the required attributes. If it is unsuccessful you will have to map the attributes manually.
-    1.  Resource
-    1.  Start Time
-    1.  End TIme
+    - Resource
+    - Start Time
+    - End TIme
 
 The wizard will validate the data source. If successful you will be able to proceed to the next screen.
 
