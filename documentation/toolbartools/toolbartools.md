@@ -27,9 +27,8 @@ navigation-bar:
       Title: Undo
     - Reference: redo
       Title: Redo
-     - Reference: hot-keys
+    - Reference: hot-keys
       Title: Hot Keys
-
 ---
 
 ![Toolbar Tools](img/ToolbarTools.png)
