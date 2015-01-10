@@ -77,7 +77,8 @@ The wording in the column header is insignificant but will need to mapped to the
 
 **Note:**
 
-> The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
+> - The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values)
+> - The end time must be equal or greater than the start time.
 
 
 More columns can be included and will be available as contextual information associated with the operation. 
@@ -119,8 +120,8 @@ Each calendar period will by default be displayed as a grey rectangle. The colou
 
 **Note:**
 
-> The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values), and the end time must be equal or greater than the start time.
-
+> - The start and end time values must have valid values (i.e. Rantt does not accept NULL or blank values)
+> - The end time must be equal or greater than the start time.
 
 ### Operation Relationships csv file
 
