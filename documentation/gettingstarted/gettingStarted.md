@@ -60,7 +60,7 @@ A dataset is made up of:
 - A calendar file (optional)
 - An Operation Relationships file (optional)
 
-For more information on how to create a project file, please visit the Rantt Project Creator page.
+For more information on how to create a project file, please visit the [Project Wizard](http://www.resourcegantt.com/documentation/projectwizard/) page.
 
 
 ### Operation csv file
