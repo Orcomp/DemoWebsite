@@ -3,29 +3,44 @@ layout: page-with-navigation
 title: Toolbar Settings
 permalink: /documentation/toolbarsettings/
 navigation-bar:
-    - Reference: toolbar-settings
-      Title: Toolbar Settings
+    - Reference: horizontal-lines
+      Title: Horizontal Lines
+    - Reference: vertical-lines
+      Title: Vertical Lines
+    - Reference: past-highlight
+      Title: Past Highlight
+    - Reference: current-datetime-line
+      Title: Current DateTime Line
+    - Reference: time-format
+      Title: Time Format
+    - Reference: data-rows
+      Title: Data Rows
+    - Reference: plot-rows
+      Title: Plot Rows
+    - Reference: tooltips
+      Title: Tooltips
+    - Reference: hide-empty-resource
+      Title: Hide Empty Resource
 
 ---
-# Toolbar Settings
 
 ![Toolbar Settings](img/ToolbarSettings.png)
 
 Here is a description of the buttons as seen in the toolbar from left to right:
 
-### Horizontal
+### Horizontal Lines
 
 Display horizontal lines between the resources.
 
-### Vertical
+### Vertical Lines
 
 Display vertical lines between the time intervals as defined by the date-time axis.
 
-### Past
+### Past Highlight
 
 Highlight the past region.
 
-### Current
+### Current DateTime Line
 
 Show current time
 
@@ -33,7 +48,7 @@ Show current time
 
 If the operations data comes from a simulation model that uses "0" as the beginning of time you can select relative time and set a new date origin.
 
-### Show Data Rows
+### Data Rows
 
 ![Data Rows](img/DataRows.png)
 
@@ -50,12 +65,12 @@ The Data row has a few options:
 
 > Any attributes can be included in the data row cells if they contain numeric values
 
-![Data Row Workspace](/img/DataRowWorkspace.png)
+![Data Row Workspace](img/DataRowWorkspace.png)
 
-### Show Plot Rows
+### Plot Rows
 
 
-### Show Tooltips
+### Tooltips
 
 Enable of disbale tooltips.
 
