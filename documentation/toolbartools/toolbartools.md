@@ -15,7 +15,7 @@ Here is a description of the buttons as seen in the toolbar from left to right:
 
 ### Datasets
 
-Allows you enable or disable datasets which are defined in the project file.
+Allows you to enable or disable datasets which are defined in the project file.
 
 ### Refresh
 
@@ -35,7 +35,7 @@ Allows you to easily switch between your workspaces.
 
 ### Start and End Dates (Date Range)
 
-Set the start and end dates for the viewing window.
+Set the start and end dates for the view window.
 
 ### Show Plots
 
@@ -47,11 +47,11 @@ Will zoom the Gantt chart out to the maximum level.
 
 ### Group By
 
-Change the attribute used for grouping on the resource axis
+Change the attribute used for grouping on the resource axis. By default it will be the Resource attribute, but you can choose any attribute that is in your operations data source.
 
 ### Highlight
 
-Will display a search window which will allow you to highlight operations on the board that match the search criteria.
+Will display a search window which will allow you to highlight operations on the Gantt chart that match the search criteria.
 
 ### Clear Columns
 
@@ -67,4 +67,4 @@ Will only redo zooming or panning steps
 
 ### Hot Keys
 
-Change the shortcut key bindings.
+Display the shortcut [key bindings](http://www.resourcegantt.com/documentation/shortcuts/).
