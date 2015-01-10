@@ -130,7 +130,7 @@ If the validation fails the wizard will prompt you to fix the relevant input fie
 Calendar Period Dataset
 -------------------------
 
-Calendar information is optional.
+Calendar information is **optional**.
 
 ![Calendar Period](images/wizard_CalendarPeriod.png)
 
@@ -138,7 +138,7 @@ Calendar information is optional.
 Relationship Dataset
 ---------------------
 
-Operation relationship information is optional.
+Operation relationship information is **optional**.
 
 You can define the file name and other details as shown below.
 
@@ -159,11 +159,11 @@ You can select the size of the view window when starting Rantt.
 
 The options are:
 
-- View all operations: The view window will be set in order to display all operations
-- Predefined date Range: Open Rantt to focus a date range of your choosing
-- Current day: The view window will start from the start time defined for today and will have a predefined duration.
+- View all operations: The view window will display all operations
+- Predefined date Range: Open Rantt to focus on a specific date range
+- Current day: The view window will start from the start time defined for today and will have a predefined duration
 
-Rantt will always open the project with the specified view window, however you can change the view window manually by zooming and panning.
+Rantt will always open the project with the specified view window..
 
 ![](images/wizard_OpenProjectBehaviour.png)
 
@@ -188,7 +188,6 @@ This screen will provide a summary of the project name as well as the datasets t
 
 ![Summary](images/wizard_Summary.png)
 
- 
 You will only be able to save the project if all the required fields have been filled in properly and the data was successfully validated.
 
 If there are validation issues, warning messages will be displayed at the top of the screen to inform you about the problem and how to fix it.
