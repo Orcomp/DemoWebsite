@@ -27,5 +27,6 @@ With this tool you can also:
 
 - Hide rectangles with a give attribute value by un-ticking the tick box. (Compare the image below with the images above.) 
 	![Hidden Operations](img/Hidden.png)
-- Change the color of an attribute by double clicking on a color circle. (TODO: add picture)
+- Change the color of an attribute by double clicking on a color circle.
+	![Colour Picker](img/ColourPicker.png)
 - Search for attribute values using the search box (The search box will accept wild cards, and the "Settings" drop down window will allow you to select "Regex" for more advanced searches.)
