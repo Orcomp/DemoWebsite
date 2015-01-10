@@ -6,6 +6,8 @@ root: true
 navigation-bar:
     - Reference: workspace-settings
       Title: Workspace Settings
+    - Reference: create-a-workspace
+      Title: Create a Workspace
     - Reference: resources-management
       Title: Resources Management
     - Reference: attribute-management
@@ -31,6 +33,26 @@ A workspace allows you to:
 
 Once a workspace is saved you can easily switch between different workspaces you have created.
 When you select a workspace from the drop down box, all the settings for the workspace will be restored.
+
+For examople you can store the following settings in a worksapce:
+
+- Hide some resource
+- The order in which the resources are displayed
+- The labels that are shown in an operation
+- The order in which the labels are displayed in an operation
+- The content in the tooltips
+- The order in which the content is displayed in the tooltips
+- Grouping tooltip categories
+- The default legend control attribute
+- Enable or disable data rows, or plot rows
+- Enable or disable tooltips
+- etc...
+
+Nearly every cusomisable setting can be saved in a workspace and restored at will.
+Different workspaces can be associated with different scenarios, or focus on different aspects of the data. Being able to switch between workspaces quickly and easily will allow you to get he most information out of your data quickly.
+
+Create a workspace
+------------------
 
 To create a new workspace:
 
