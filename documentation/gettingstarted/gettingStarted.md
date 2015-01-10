@@ -42,6 +42,8 @@ Sample project files can also be found in this installation folder under the fol
 - MultiDataset (Multiple Datasets)
 - CurrentTime (only Operations)
 
+More details (and screen shots) about the sample data can be found on [this page](http://www.resourcegantt.com/documentation/sampledata/).
+
 Workspaces and settings files are saved in `%AppData%/Wild Gums/Rantt`
 
 
