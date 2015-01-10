@@ -16,7 +16,7 @@ Create a new Rantt project file.
 
 ### Open (ctrl + O)
 
-Open a Rantt project.
+Open a Rantt project and display the data in the Gantt chart.
 
 ### Edit (Ctrl + E)
 
@@ -32,7 +32,7 @@ Print the Gantt chart.
 
 ### Create Support Package
 
-Press this button to create a support package, which will contain the data in the Gantt chart. This will allow us to reproduce any errors you may come across, and fix them faster for you.
+Will create a support package, which will contain all the data displayed in the Gantt chart. This will allow us to reproduce any errors you may come across, and fix them faster for you.
 
 ### Exit
 
