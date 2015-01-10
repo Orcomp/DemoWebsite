@@ -20,9 +20,9 @@ Tooltips in Rantt are very powerful and customisable. The main highlights are:
 	![Tooltip Categories](img/ExpandedTooltips.png)
 	
 	- Create as many categories as you like by editing the "Category" column in the "Attribute Management" grid.
-	**Note:** 
 	
-	> By default all fields belong to the "Misc" category if nothing is specified.
+	**Note:** 
+    > By default all fields belong to the "Misc" category if nothing is specified in the category column.
 	
 - Categories can be expanded or collapsed so you can concentrate on the information that is important to you
 	![Tooltip Collapsed](img/CollapsedTooltips.png)
