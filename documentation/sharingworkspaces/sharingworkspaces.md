@@ -5,9 +5,7 @@ permalink: /documentation/sharingworkspaces/
 
 ---
 
-This is a guide on how to share workspaces between the web and desktop version of Rantt.
-
-Essentially the web and desktop version of Rantt need to share the same folder in which the workspaces are saved.
+The web and desktop version of Rantt can share workspaces if both applications point to the same folder the workspaces are saved in.
 
 Because of permission issues with IIS it is often easier to change the desktop configuration.
 

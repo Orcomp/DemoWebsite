@@ -82,7 +82,7 @@ The project will then be accessible from **http://hostName/MyProjectName/**
 Workspaces
 -----------
 
-Workspaces created with the desktop version can be shared with the Web version (and vice versa).
+Workspaces created with the desktop version can be shared with the Web version (and vice versa). To find out more please read the ["Sharing Workspaces"](http://www.resourcegantt.com/documentation/sharingworkspaces/) page.
 
 The web version can open a workspace directly by appending the workspace name to the URL
 
