@@ -1,8 +1,8 @@
 Notes for Rant documentation
 
-- Toolbar FileMenu (Add)
-- Toolbar Tools (Get Andrew to review)
 - Toolbar Settings
-- Legend Control (Update)
+	- Picture of past highlight
+	- Picture of current time
+- Web Version show the URL to use workspaces
 
 - explain SQL data views. How users can manipulate data in the database

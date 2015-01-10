@@ -49,9 +49,9 @@ A project file can contain multiple datasets.
 
 A dataset is made up of:
 
-- An operation data source (compulsory)
-- A Calendar data source (optional)
-- An Operations Relationship data source (optional)
+- An operation data source **(compulsory)**
+- A Calendar data source **(optional)**
+- An Operations Relationship data source **(optional)**
 
 These data sources can either be a csv file, an Excel spreadsheet or a database table (or view).
 
@@ -59,7 +59,7 @@ These data sources can either be a csv file, an Excel spreadsheet or a database 
 
 > It is possible to have an operation csv file, a calendar database table and a relationship Excel spreadsheet all in the one dataset.
 
-A project can contain multiple datasets, which makes it easier to compare data, as multiple datasets can be displayed in Rantt at the same time.
+A project can contain multiple datasets, which makes it easier to compare data, as multiple datasets can be displayed in Rantt at the same time. (See the "ActualPlanned" example on the [sample data page](http://www.resourcegantt.com/documentation/sampledata/).)
 
 Creating A Project
 ==================
@@ -106,8 +106,11 @@ The inputs required for this screen include:
     1.  Absolute: For fixed start and end times (which is the most frequently used option)
     1.  Relative: For start and end times that are defined in terms of numbers (either integers or floats). If this option is selected a "Start Date" field will appear, from which the relative time will start, as well as a "Unit of time" field, which corresponds to the unit of time used in the start and end time fields. 
         
-		Relative time is generally used for simulation data that starts from time "0".
         ![](images/RelativeDates.png)
+        
+        **Note:**
+        
+		> Relative time is generally used for simulation data that starts from time "0".
 1.  File: The location and name of the operation file. 
 
 	If a database source is selected you will be prompted for a connection string and database table name:
@@ -116,9 +119,9 @@ The inputs required for this screen include:
     The "Table Name" can either be a physical database table or a view.
 1.  Default Attribute: Select the attribute that is the most significant for you.
 1.  Field Mappings: The wizard will try and automatically match the column or fields names to the required attributes. If it is unsuccessful you will have to map the attributes manually.
-    1.  Resource
-    1.  Start Time
-    1.  End TIme
+    - Resource
+    - Start Time
+    - End TIme
 
 The wizard will validate the data source. If successful you will be able to proceed to the next screen.
 
@@ -127,7 +130,7 @@ If the validation fails the wizard will prompt you to fix the relevant input fie
 Calendar Period Dataset
 -------------------------
 
-Calendar information is optional.
+Calendar information is **optional**.
 
 ![Calendar Period](images/wizard_CalendarPeriod.png)
 
@@ -135,7 +138,7 @@ Calendar information is optional.
 Relationship Dataset
 ---------------------
 
-Operation relationship information is optional.
+Operation relationship information is **optional**.
 
 You can define the file name and other details as shown below.
 
@@ -156,11 +159,11 @@ You can select the size of the view window when starting Rantt.
 
 The options are:
 
-- View all operations: The view window will be set in order to display all operations
-- Predefined date Range: Open Rantt to focus a date range of your choosing
-- Current day: The view window will start from the start time defined for today and will have a predefined duration.
+- View all operations: The view window will display all operations
+- Predefined date Range: Open Rantt to focus on a specific date range
+- Current day: The view window will start from the start time defined for today and will have a predefined duration
 
-Rantt will always open the project with the specified view window, however you can change the view window manually by zooming and panning.
+Rantt will always open the project with the specified view window..
 
 ![](images/wizard_OpenProjectBehaviour.png)
 
@@ -185,7 +188,6 @@ This screen will provide a summary of the project name as well as the datasets t
 
 ![Summary](images/wizard_Summary.png)
 
- 
 You will only be able to save the project if all the required fields have been filled in properly and the data was successfully validated.
 
 If there are validation issues, warning messages will be displayed at the top of the screen to inform you about the problem and how to fix it.

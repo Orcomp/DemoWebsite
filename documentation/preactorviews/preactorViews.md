@@ -20,9 +20,11 @@ The zip file contains two scripts:
 
 These scripts will create two views, one for **operations** and the other for **calendar periods**, which can then be imported into Rantt easily.
 
-Step 1: Run FunctionsAndProcedures.sql
-Step 2: CreateViews.sql
-Step 3: Create a new Rantt project and include the newly created views
+Steps:
+
+1. Run FunctionsAndProcedures.sql
+1. CreateViews.sql
+1. Create a new Rantt project and include the newly created views
 
 **Note:**
 

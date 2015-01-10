@@ -7,7 +7,7 @@ navigation-bar:
       Title: Product Highlights
 ---
 
-The Rantt (**R**esource G**antt**) application was developed by [Simply Effective Solutions](wwww.sesolutions.net.au) as a tool to allow greater flexibility and visibility around viewing data associated with scheduling and simulation data.
+The Rantt (**R**esource G**antt**) application was developed by [Simply Effective Solutions](wwww.sesolutions.net.au) as a tool to allow greater flexibility and visibility around viewing data associated with scheduling, planning and simulation results.
 
 It can be used as a Management communication tool to present timed stamped data in a more meaningful way, and turns data into information that is easily explorable.
 

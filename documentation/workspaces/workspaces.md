@@ -6,6 +6,8 @@ root: true
 navigation-bar:
     - Reference: workspace-settings
       Title: Workspace Settings
+    - Reference: create-a-workspace
+      Title: Create a Workspace
     - Reference: resources-management
       Title: Resources Management
     - Reference: attribute-management
@@ -31,6 +33,26 @@ A workspace allows you to:
 
 Once a workspace is saved you can easily switch between different workspaces you have created.
 When you select a workspace from the drop down box, all the settings for the workspace will be restored.
+
+For examople you can store the following settings in a worksapce:
+
+- Hide some resource
+- The order in which the resources are displayed
+- The labels that are shown in an operation
+- The order in which the labels are displayed in an operation
+- The content in the tooltips
+- The order in which the content is displayed in the tooltips
+- Grouping tooltip categories
+- The default legend control attribute
+- Enable or disable data rows, or plot rows
+- Enable or disable tooltips
+- etc...
+
+Nearly every cusomisable setting can be saved in a workspace and restored at will.
+Different workspaces can be associated with different scenarios, or focus on different aspects of the data. Being able to switch between workspaces quickly and easily will allow you to get he most information out of your data quickly.
+
+Create a workspace
+------------------
 
 To create a new workspace:
 
@@ -67,7 +89,7 @@ Attribute Management
     - Boolean
     - Double
     - Integer
-- Assign the attribute to a category. Attributes with the same category will be grouped together in the tooltips. 
+- Assign the attribute to a category. Attributes with the same category will be grouped together in the [tooltips](http://www.resourcegantt.com/documentation/tooltips/). 
 - Add a description to the attributes.
 
 ![Rant Attributes Management](WorkspaceAttributeManagement.png)
@@ -85,9 +107,9 @@ Attributes in Labels
 Attributes in Tooltips
 ------------------------
 
-The Attributes in Tooltips panel allows user to:
+The Attributes in Tooltips panel allows you to:
 
--  Show / hide tooltips on Gantt Chart, by toggling the check boxes.
+-  Show / hide tooltips on the Gantt Chart, by toggling the check boxes.
 -  Change the position of each tooltip on Gantt Chart by double clicking on the position cell and changing the value.
 
 
@@ -107,7 +129,7 @@ Attributes in Datarow
 ----------------------
 
 -  Show or hide the attribute from the Data Row, by ticking or unticking the check boxes.
--  Change the position of each datarow on Gantt Chart by double clicking on the position cell  and changing the value.
+-  Change the position of each datarow on the Gantt Chart by double clicking on the position cell  and changing the value.
 -  Change the format of datarow by double clicking on Format cell and selecting the appropriate format.
 
 The various formats for a number like 12345.678 are:
@@ -120,6 +142,6 @@ The various formats for a number like 12345.678 are:
 
 **Note:**
 
-> In order for an attribute to be displayed in the DataRow, it needs to be of a numeric type, otherwise the value displayed will be 0.
+> In order for an attribute to be displayed in the DataRow, it needs to be a numeric type, otherwise the value displayed will be 0.
 
 ![Rant Attributes in Datarow](WorkspaceAttributeDatarowManagement.png) 
