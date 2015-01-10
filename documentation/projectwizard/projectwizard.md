@@ -107,6 +107,7 @@ The inputs required for this screen include:
     1.  Relative: For start and end times that are defined in terms of numbers (either integers or floats). If this option is selected a "Start Date" field will appear, from which the relative time will start, as well as a "Unit of time" field, which corresponds to the unit of time used in the start and end time fields. 
         
         ![](images/RelativeDates.png)
+        
         **Note:**
         
 		> Relative time is generally used for simulation data that starts from time "0".
