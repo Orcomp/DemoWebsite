@@ -4,4 +4,4 @@ title: Troubleshooting
 permalink: /documentation/troubleshooting/
 ---
 
-troubleshooting info
+This is the troubleshooting page for the desktop version of Rantt.

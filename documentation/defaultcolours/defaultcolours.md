@@ -2,13 +2,12 @@
 layout: page-with-navigation
 title: Default Colours
 permalink: /documentation/defaultcolours/
-
+navigation-bar:
+    - Reference: manual-colors
+      Title: Manual Colors
+    - Reference: colors.csv-file
+      Title: Colors.csv File
 ---
-
-This page will explain how to change operation colors to suit your needs.
-
-Default Colors
-===============
 
 By default Rantt will automatically assign colors to operations based on the attribute selected in the legend control and their corresponding values.
 

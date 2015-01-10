@@ -33,3 +33,7 @@ The Gantt chart is also divided into several components:
  - Pinnable Tooltips
  
  ![Layout](img/Layout2.png)
+ 
+**Note:**
+
+> You can display a highlight column by Ctrl + Click on any operation or DateTime axis rectangle.
