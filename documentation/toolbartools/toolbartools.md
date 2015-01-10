@@ -3,11 +3,34 @@ layout: page-with-navigation
 title: Toolbar Tools
 permalink: /documentation/toolbartools/
 navigation-bar:
-    - Reference: toolbar-tools
-      Title: Toolbar Tools
+    - Reference: datasets
+      Title: Datasets
+    - Reference: refresh
+      Title: Refresh
+    - Reference: disable-auto-refresh
+      Title: Disable Auto Refresh
+    - Reference: workspaces
+      Title: Workspaces
+    - Reference: start-and-end-dates
+      Title: Start and End Dates
+    - Reference: show-plots
+      Title: Show Plots
+    - Reference: zoom-all
+      Title: Zoom All
+    - Reference: group-by
+      Title: Group By
+    - Reference: highlight
+      Title: Highlight
+    - Reference: clear-columns
+      Title: Clear Columns
+    - Reference: undo
+      Title: Undo
+    - Reference: redo
+      Title: Redo
+     - Reference: hot-keys
+      Title: Hot Keys
 
 ---
-# Toolbar Tools
 
 ![Toolbar Tools](img/ToolbarTools.png)
 
