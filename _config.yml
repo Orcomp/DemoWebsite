@@ -1,6 +1,6 @@
 # Site settings
 title: Rantt
-email: info@sesolutions.net.au
+email: contact@wildgums.com
 description: "Resource Gantt"
 url: http://www.resourcegantt.com
 include: [_colorpicker.js, _handlebars.js, _jquery.placeholder.js, _scripts.js, _jq.js, _skinchooser.js, _skins.js, _colorpicker.css]
@@ -12,3 +12,4 @@ permalink: pretty
 
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
