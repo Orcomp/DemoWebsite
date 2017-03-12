@@ -1,10 +1,17 @@
 # Site settings
-title: Rantt
+title: Rantt is a Resource Gantt Chart desktop application
 email: contact@wildgums.com
-description: "Resource Gantt"
+description: "Rantt is a Resource Gantt chart application used to visualize shop floor data from factories or schedules"
 url: http://www.resourcegantt.com
+logo: /images/rantt-logo.png
 include: [_colorpicker.js, _handlebars.js, _jquery.placeholder.js, _scripts.js, _jq.js, _skinchooser.js, _skins.js, _colorpicker.css]
 exclude: [vendor]
+
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
 
 # Build settings
 markdown: kramdown
