@@ -4,6 +4,7 @@ email: contact@wildgums.com
 description: "Rantt is a Resource Gantt chart application used to visualize shop floor data from factories or schedules"
 url: http://www.resourcegantt.com
 logo: /images/rantt-logo.png
+author: WildGums
 include: [_colorpicker.js, _handlebars.js, _jquery.placeholder.js, _scripts.js, _jq.js, _skinchooser.js, _skins.js, _colorpicker.css]
 exclude: [vendor]
 
